@@ -145,6 +145,7 @@ body {
 
 .card-image {
     width: 100%; /* Kartın genişliğine göre ayarlanır */
+    max-width: 200px; /* Maksimum genişliği 200 piksel ile sınırla */
     height: auto; /* Orantılı yükseklik */
     border-radius: 8px; /* Kenarları yuvarlatma */
     margin-bottom: 10px; /* Resim ile metin arasında boşluk */
