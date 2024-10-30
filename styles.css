@@ -102,7 +102,7 @@ body {
     background-color: #2a2a2a;
     padding: 15px;
     border-radius: 8px;
-    flex: 1; /* Eşit alan paylaşımı için */
+    flex: 1;
     font-size: 0.9rem; /* Daha küçük font boyutu */
 }
 
