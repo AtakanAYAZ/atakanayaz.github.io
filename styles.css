@@ -95,12 +95,12 @@ body {
 .cve-list, .blog-list {
     list-style: none;
     padding: 0;
-    font-size: 0.9rem; /* Küçültülmüş boyut */
-    line-height: 1.6;
+    font-size: 0.9rem; /* Küçük boyut */
+    line-height: 1.4; /* Daha sıkı satır aralığı */
 }
 
 .cve-list li, .blog-list li {
-    margin-bottom: 10px;
+    margin-bottom: 8px; /* Küçük boşluk */
 }
 
 .cve-list a, .blog-list a {
