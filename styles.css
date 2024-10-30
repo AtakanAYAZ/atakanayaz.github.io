@@ -1,91 +1,65 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f8f9fa; /* Açık gri arka plan */
-    color: #343a40; /* Koyu yazı rengi */
-    line-height: 1.6;
+    background-color: #1f1f1f; /* Açık siyah arka plan */
+    color: #ffffff; /* Beyaz metin */
+    font-family: Arial, sans-serif;
 }
 
 header {
-    background: #007bff; /* Mavi üst bar */
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    background-color: #0f4c81; /* Koyu mavi başlık */
+    padding: 10px;
+}
+
+h1, h2 {
+    color: #ffffff; /* Beyaz başlık metni */
 }
 
 nav ul {
-    list-style: none;
-    padding: 0;
+    list-style-type: none;
 }
 
 nav ul li {
     display: inline;
-    margin: 0 20px;
+    margin-right: 20px;
 }
 
 nav a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-.hero {
-    background: url('https://example.com/your-image.jpg') no-repeat center center/cover; /* Arka plan resmi */
-    color: white;
-    text-align: center;
-    padding: 100px 20px;
-}
-
-.hero h2 {
-    font-size: 2.5em;
-}
-
-.hero p {
-    font-size: 1.2em;
-}
-
-.btn {
-    background: #28a745; /* Yeşil buton */
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
+    color: #add8e6; /* Açık mavi bağlantılar */
     text-decoration: none;
 }
 
-.container {
-    width: 90%;
-    margin: auto;
-    max-width: 1200px;
-}
-
-main {
-    padding: 20px;
-}
-
-section {
-    margin-bottom: 40px;
-}
-
-h2 {
-    color: #007bff; /* Mavi alt başlık */
-}
-
-h3 {
-    margin-bottom: 10px;
+nav a:hover {
+    text-decoration: underline; /* Bağlantılar üzerine gelince altı çizili */
 }
 
 footer {
     text-align: center;
-    padding: 20px 0;
-    background: #343a40; /* Koyu gri alt bar */
-    color: white;
-    position: relative;
-    bottom: 0;
+    padding: 10px;
+    background-color: #0f4c81; /* Koyu mavi alt bilgi */
+}
+
+form {
+    background-color: #292929; /* Form arka planı */
+    padding: 20px;
+    border-radius: 5px;
+}
+
+input, textarea {
     width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    border: none;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #0f4c81; /* Koyu mavi buton */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #1f1f1f; /* Buton üzerine gelince arka plan değişimi */
 }
