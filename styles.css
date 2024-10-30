@@ -110,3 +110,12 @@ footer {
     bottom: 0;
     width: 100%;
 }
+.share-buttons {
+    margin-top: 10px;
+}
+
+.share-buttons .btn {
+    background: #007BFF;
+    margin-right: 10px;
+}
+
