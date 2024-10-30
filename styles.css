@@ -2,8 +2,8 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    background-color: #f9f9f9;
+    color: #444;
 }
 
 .container {
@@ -13,13 +13,14 @@ body {
 }
 
 header {
-    background: #007bff;
+    background: #003366;
     color: white;
     padding: 20px 0;
 }
 
 header h1 {
     text-align: center;
+    font-size: 2.5rem;
 }
 
 nav {
@@ -39,10 +40,11 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .hero {
-    background: #6c757d;
+    background: #00509e;
     color: white;
     padding: 50px 0;
     text-align: center;
@@ -53,7 +55,7 @@ nav ul li a {
 }
 
 h2, h3 {
-    color: #007bff;
+    color: #003366;
 }
 
 .btn {
