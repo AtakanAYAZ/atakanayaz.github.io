@@ -1,24 +1,29 @@
-* {
-    box-sizing: border-box;
-}
-
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
     background-color: #f4f4f4;
+    color: #333;
 }
 
 .container {
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
 }
 
 header {
-    background: #333;
-    color: #fff;
+    background: #007bff;
+    color: white;
     padding: 20px 0;
+}
+
+header h1 {
+    text-align: center;
+}
+
+nav {
+    text-align: center;
 }
 
 nav ul {
@@ -31,91 +36,69 @@ nav ul li {
     margin: 0 15px;
 }
 
-nav a {
-    color: #fff;
+nav ul li a {
+    color: white;
     text-decoration: none;
-    font-weight: bold;
 }
 
 .hero {
-    background: #007BFF;
+    background: #6c757d;
     color: white;
     padding: 50px 0;
     text-align: center;
 }
 
-.hero h2 {
-    font-size: 2.5rem;
+.main {
+    padding: 20px 0;
 }
 
-.hero p {
-    font-size: 1.2rem;
+h2, h3 {
+    color: #007bff;
 }
 
 .btn {
     display: inline-block;
     padding: 10px 20px;
-    margin-top: 10px;
-    background: #333;
-    color: #fff;
+    color: white;
+    background: #007bff;
     text-decoration: none;
     border-radius: 5px;
 }
 
-main {
-    margin: 20px 0;
-}
-
-.about, .posts, .contact {
-    background: white;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-}
-
-h2 {
-    color: #333;
-}
-
-.posts article {
-    margin-bottom: 20px;
-    padding: 15px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-}
-
-article h3 {
-    margin: 0;
-}
-
-.contact form {
-    display: flex;
-    flex-direction: column;
-}
-
-.contact input, .contact textarea {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.btn:hover {
+    background: #0056b3;
 }
 
 footer {
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
     background: #333;
-    color: #fff;
+    color: white;
     position: relative;
     bottom: 0;
     width: 100%;
 }
-.share-buttons {
-    margin-top: 10px;
+
+form {
+    display: flex;
+    flex-direction: column;
 }
 
-.share-buttons .btn {
-    background: #007BFF;
-    margin-right: 10px;
+form input, form textarea {
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
+form button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background: #0056b3;
+}
