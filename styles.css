@@ -1,86 +1,122 @@
 /* Genel Ayarlar */
 body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
     background-color: #1c1c1c;
-    color: #f5f5f5;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 /* Header */
 .main-header {
-    background-color: #141414;
-    padding: 60px 0;
+    background-color: #2a2a2a;
+    padding: 20px;
     text-align: center;
 }
 
 .main-header h1 {
-    font-size: 3rem;
-    margin-bottom: 10px;
+    font-size: 2.5rem;
+    margin: 0;
 }
 
-nav ul {
+.main-header nav ul {
     list-style: none;
     padding: 0;
-    display: flex;
-    justify-content: center;
 }
 
-nav ul li {
+.main-header nav ul li {
+    display: inline-block;
     margin: 0 15px;
 }
 
-nav ul li a {
+.main-header a {
     text-decoration: none;
-    color: #0a84ff;
+    color: #4d8db0;
     font-size: 1.2rem;
 }
 
-/* Buton Stili */
+/* Hero Bölümü */
+.hero-section {
+    padding: 50px 0;
+    text-align: center;
+    background-color: #333;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 1.2rem;
+}
+
 .btn {
     display: inline-block;
-    margin-top: 10px;
     padding: 10px 20px;
-    background-color: #0a84ff;
-    color: white;
-    border: none;
-    border-radius: 5px;
+    margin-top: 15px;
+    background-color: #4d8db0;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    border-radius: 5px;
 }
 
-.btn:hover {
-    background-color: #005fcc;
-}
-
-/* İçerik Bölümü */
-.content-section {
-    padding: 50px 0;
-}
-
-.cve-list, .blog-list {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    align-items: center;
-}
-
-.cve-item, .blog-item {
-    background-color: #292929;
-    padding: 15px;
-    width: 80%;
+/* Öne Çıkan Konular */
+.featured-section, .cve-section, .articles-section {
+    margin: 20px 0;
+    padding: 20px;
+    background-color: #1b1b1b;
     border-radius: 8px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.featured-title, h2 {
     text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
+.card p {
+    margin-bottom: 10px;
+}
+
+/* CVE ve Blog Listeleri */
+.cve-list, .blog-list {
+    list-style: none;
+    padding: 0;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.cve-list li, .blog-list li {
+    margin-bottom: 10px;
+}
+
+.cve-list a, .blog-list a {
+    color: #79a9c9;
+    text-decoration: underline;
 }
 
 /* Footer */
-.custom-footer {
-    background-color: #141414;
+.footer {
     text-align: center;
-    padding: 15px;
-    margin-top: 40px;
-}
-
-.custom-footer nav {
-    margin-top: 10px;
+    padding: 15px 0;
+    background-color: #2a2a2a;
+    margin-top: 20px;
 }
