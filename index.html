@@ -1,71 +1,91 @@
-<!DOCTYPE html>
-<html lang="tr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Siber Güvenlik Blogu</title>
-    <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Siber Güvenlik Blogu</h1>
-            <nav>
-                <ul>
-                    <li><a href="#about">Hakkında</a></li>
-                    <li><a href="#cve">Güncel CVE'ler</a></li>
-                    <li><a href="#contact">İletişim</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    
-    <section class="hero">
-        <div class="container">
-            <h2>Güvenliğinizi Artırın</h2>
-            <p>Siber güvenlik hakkında en güncel bilgiler ve ipuçları için doğru yerdesiniz.</p>
-            <a href="#cve" class="btn">Güncel CVE'lere Göz At</a>
-        </div>
-    </section>
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
 
-    <main class="container">
-        <section id="about" class="about">
-            <h2>Hakkında</h2>
-            <p>Bu blog, siber güvenlik konularında güncel bilgiler ve rehberler sunmak amacıyla oluşturulmuştur. 
-            Güvenliğinizi artırmak için ipuçları ve stratejiler bulacaksınız.</p>
-        </section>
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f8f9fa; /* Açık gri arka plan */
+    color: #343a40; /* Koyu yazı rengi */
+    line-height: 1.6;
+}
 
-        <section id="cve" class="cve">
-            <h2>Güncel CVE Açıkları</h2>
-            <article>
-                <h3><a href="cve1.html">CVE-2023-12345: Örnek Açık</a></h3>
-                <p>Bu CVE, XYZ yazılımında bir güvenlik açığıdır. Açık, kötü niyetli kullanıcıların sisteme erişmesine olanak tanımaktadır.</p>
-            </article>
-            <article>
-                <h3><a href="cve2.html">CVE-2023-67890: Örnek Açık</a></h3>
-                <p>Bu CVE, ABC sisteminde bir zafiyet olup, verilere yetkisiz erişim sağlama riski taşımaktadır.</p>
-            </article>
-            <article>
-                <h3><a href="cve3.html">CVE-2023-54321: Örnek Açık</a></h3>
-                <p>Bu CVE, DEF uygulamasında bir sorun olup, uzaktan kod çalıştırma riskini artırmaktadır.</p>
-            </article>
-        </section>
+header {
+    background: #007bff; /* Mavi üst bar */
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
 
-        <section id="contact" class="contact">
-            <h2>İletişim</h2>
-            <p>Herhangi bir sorunuz veya öneriniz varsa lütfen bizimle iletişime geçin.</p>
-            <form>
-                <input type="text" placeholder="Adınız" required>
-                <input type="email" placeholder="E-posta Adresiniz" required>
-                <textarea placeholder="Mesajınız" required></textarea>
-                <button type="submit" class="btn">Gönder</button>
-            </form>
-        </section>
-    </main>
+nav ul {
+    list-style: none;
+    padding: 0;
+}
 
-    <footer>
-        <p>&copy; 2024 Siber Güvenlik Atakan AYAZ'ın Blogu. Tüm hakları saklıdır.</p>
-    </footer>
-</body>
-</html>
+nav ul li {
+    display: inline;
+    margin: 0 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.hero {
+    background: url('https://example.com/your-image.jpg') no-repeat center center/cover; /* Arka plan resmi */
+    color: white;
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h2 {
+    font-size: 2.5em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn {
+    background: #28a745; /* Yeşil buton */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1200px;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+}
+
+h2 {
+    color: #007bff; /* Mavi alt başlık */
+}
+
+h3 {
+    margin-bottom: 10px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #343a40; /* Koyu gri alt bar */
+    color: white;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
