@@ -106,7 +106,7 @@ body {
 
 .cve-title, .articles-title {
     text-align: left; /* Başlık sola hizalandı */
-    font-size: 1.5rem; /* Başlık boyutu küçültüldü */
+    font-size: 1.3rem; /* Başlık boyutu küçültüldü */
     margin-bottom: 15px;
 }
 
