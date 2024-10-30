@@ -135,3 +135,22 @@ body {
     background-color: #2a2a2a;
     margin-top: 20px;
 }
+.card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+    text-align: center; /* Resim ve metin ortalanacak */
+}
+
+.card-image {
+    width: 100%; /* Kartın genişliğine göre ayarlanır */
+    height: auto; /* Orantılı yükseklik */
+    border-radius: 8px; /* Kenarları yuvarlatma */
+    margin-bottom: 10px; /* Resim ile metin arasında boşluk */
+}
+
+.card h3 {
+    margin-top: 0;
+}
+
