@@ -154,4 +154,56 @@ body {
 .card h3 {
     margin-top: 0;
 }
+body {
+    background-color: #1c1c1c;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.main-header {
+    background-color: #2a2a2a;
+    padding: 20px;
+    text-align: center;
+}
+
+.hero-section h2 {
+    font-size: 2rem;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+
+.card {
+    background-color: #2a2a2a;
+    padding: 20px;
+    border-radius: 8px;
+    width: 30%;
+}
+
+/* Mobil uyumlu stil ayarları */
+@media (max-width: 768px) {
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .hero-section h2 {
+        font-size: 1.5rem;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+}
 
