@@ -1,3 +1,4 @@
+/* Genel Ayarlar */
 body {
     margin: 0;
     font-family: 'Roboto', sans-serif;
@@ -5,66 +6,81 @@ body {
     color: #f5f5f5;
 }
 
-header {
+/* Header */
+.main-header {
     background-color: #141414;
-    padding: 40px;
+    padding: 60px 0;
     text-align: center;
 }
 
-header h1 {
-    margin: 0;
-    font-size: 2.5rem;
+.main-header h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
+    display: flex;
+    justify-content: center;
 }
 
 nav ul li {
-    display: inline;
     margin: 0 15px;
 }
 
 nav ul li a {
-    color: #0a84ff;
     text-decoration: none;
+    color: #0a84ff;
     font-size: 1.2rem;
 }
 
-.hero-section {
-    text-align: center;
-    padding: 100px 20px;
-    background-color: #333;
+/* Buton Stili */
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 20px;
+    background-color: #0a84ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
 }
 
-.card-container {
+.btn:hover {
+    background-color: #005fcc;
+}
+
+/* İçerik Bölümü */
+.content-section {
+    padding: 50px 0;
+}
+
+.cve-list, .blog-list {
     display: flex;
-    justify-content: space-around;
-    margin-top: 20px;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
 }
 
-.card {
+.cve-item, .blog-item {
     background-color: #292929;
-    padding: 20px;
-    width: 30%;
+    padding: 15px;
+    width: 80%;
     border-radius: 8px;
-    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
 }
 
-.card h3 {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-}
-
-.content-grid {
-    display: flex;
-    justify-content: space-between;
+/* Footer */
+.custom-footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 15px;
     margin-top: 40px;
 }
 
-footer {
-    background-color: #141414;
-    text-align: center;
-    padding: 10px;
+.custom-footer nav {
+    margin-top: 10px;
 }
