@@ -42,81 +42,82 @@ body {
     background-color: #333;
 }
 
-.hero-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background-color: #4d8db0;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
-}
-
 /* Öne Çıkan Konular */
-.featured-section, .cve-section, .articles-section {
-    margin: 20px 0;
-    padding: 20px;
-    background-color: #1b1b1b;
-    border-radius: 8px;
+.featured-section {
+    padding: 40px 0;
+    background-color: #2a2a2a;
 }
 
-.featured-title, h2 {
+.featured-title {
     text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
 .card-container {
     display: flex;
     justify-content: space-around;
-    gap: 15px;
 }
 
 .card {
-    background-color: #2a2a2a;
+    background-color: #444;
     padding: 20px;
-    border-radius: 8px;
+    border-radius: 5px;
     width: 30%;
+    text-align: center;
 }
 
 .card h3 {
-    margin-top: 0;
+    font-size: 1.5rem;
 }
 
 .card p {
-    margin-bottom: 10px;
+    font-size: 1rem;
 }
 
-/* CVE ve Blog Listeleri */
-.cve-list, .blog-list {
-    list-style: none;
-    padding: 0;
-    font-size: 1.1rem;
-    line-height: 1.6;
+/* CVE Bölümü */
+.cve-section {
+    padding: 40px 0;
 }
 
-.cve-list li, .blog-list li {
-    margin-bottom: 10px;
+.cve-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
 }
 
-.cve-list a, .blog-list a {
-    color: #79a9c9;
-    text-decoration: underline;
+/* Yazılar Bölümü */
+.articles-section {
+    padding: 40px 0;
+}
+
+.articles-title {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+}
+
+.article-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.article {
+    background-color: #444;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    width: 80%;
 }
 
 /* Footer */
-.footer {
-    text-align: center;
-    padding: 15px 0;
+footer {
     background-color: #2a2a2a;
-    margin-top: 20px;
+    text-align: center;
+    padding: 20px;
+}
+
+footer p {
+    margin: 0;
 }
