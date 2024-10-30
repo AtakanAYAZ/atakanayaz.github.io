@@ -7,12 +7,13 @@ body {
 
 header {
     background-color: #141414;
-    padding: 20px;
+    padding: 40px;
     text-align: center;
 }
 
 header h1 {
     margin: 0;
+    font-size: 2.5rem;
 }
 
 nav ul {
@@ -28,19 +29,13 @@ nav ul li {
 nav ul li a {
     color: #0a84ff;
     text-decoration: none;
+    font-size: 1.2rem;
 }
 
 .hero-section {
     text-align: center;
     padding: 100px 20px;
     background-color: #333;
-}
-
-.featured-title {
-    font-family: 'Raleway', sans-serif;
-    font-size: 28px;
-    text-align: center;
-    font-weight: 600;
 }
 
 .card-container {
@@ -54,6 +49,12 @@ nav ul li a {
     padding: 20px;
     width: 30%;
     border-radius: 8px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.3);
+}
+
+.card h3 {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
 }
 
 .content-grid {
@@ -62,19 +63,8 @@ nav ul li a {
     margin-top: 40px;
 }
 
-.cve-list, .blog-posts {
-    width: 48%;
-}
-
-.cve-list ul {
-    list-style: none;
-    padding: 0;
-}
-
-.cve-list li {
-    margin-bottom: 10px;
-}
-
-.blog-posts article {
-    margin-bottom: 20px;
+footer {
+    background-color: #141414;
+    text-align: center;
+    padding: 10px;
 }
