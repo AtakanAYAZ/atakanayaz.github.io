@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Atakan Ayaz - Siber Güvenlik Blogu</title>
     <link rel="stylesheet" href="styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Raleway:wght@600&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="main-header">
@@ -33,7 +33,7 @@
     <main>
         <section id="featured" class="featured-section">
             <div class="container">
-                <h2>Öne Çıkan Konular</h2>
+                <h2 class="featured-title">Öne Çıkan Konular</h2>
                 <div class="card-container">
                     <div class="card">
                         <h3>Phishing Saldırıları</h3>
@@ -54,30 +54,30 @@
             </div>
         </section>
 
-        <section id="cve" class="cve-section">
-            <div class="container">
-                <h2>Güncel CVE Açıkları</h2>
-                <ul>
-                    <li><strong>CVE-2024-12345:</strong> Apache Log4j güvenlik açığı – Uzaktan kod yürütme tehdidi. <a href="#">Detaylar ve Çözüm</a></li>
-                    <li><strong>CVE-2024-54321:</strong> Windows SMB servisinde kritik açık – Ağ geçişine izin verir. <a href="#">Detaylar ve Çözüm</a></li>
-                    <li><strong>CVE-2024-09876:</strong> OpenSSL sürüm güncellemesi – Şifreleme hataları. <a href="#">Detaylar ve Çözüm</a></li>
-                </ul>
-            </div>
-        </section>
+        <section class="content-section">
+            <div class="container content-grid">
+                <div class="cve-list">
+                    <h2>Güncel CVE Açıkları</h2>
+                    <ul>
+                        <li><strong>CVE-2024-12345:</strong> Apache Log4j güvenlik açığı – Uzaktan kod yürütme tehdidi. <a href="#">Detaylar ve Çözüm</a></li>
+                        <li><strong>CVE-2024-54321:</strong> Windows SMB servisinde kritik açık – Ağ geçişine izin verir. <a href="#">Detaylar ve Çözüm</a></li>
+                        <li><strong>CVE-2024-09876:</strong> OpenSSL sürüm güncellemesi – Şifreleme hataları. <a href="#">Detaylar ve Çözüm</a></li>
+                    </ul>
+                </div>
 
-        <section id="articles" class="articles-section">
-            <div class="container">
-                <h2>Son Blog Yazıları</h2>
-                <article>
-                    <h3>Güçlü Parola Oluşturma</h3>
-                    <p>Güçlü bir parola oluşturmanın püf noktalarını öğrenin ve hesabınızı güvenceye alın.</p>
-                    <a href="#" class="btn">Devamını Oku</a>
-                </article>
-                <article>
-                    <h3>Zero-Day Açıkları Nedir?</h3>
-                    <p>Zero-day açıkları nasıl tespit edilir ve nasıl korunulur?</p>
-                    <a href="#" class="btn">Devamını Oku</a>
-                </article>
+                <div class="blog-posts">
+                    <h2>Son Blog Yazıları</h2>
+                    <article>
+                        <h3>Güçlü Parola Oluşturma</h3>
+                        <p>Güçlü bir parola oluşturmanın püf noktalarını öğrenin ve hesabınızı güvenceye alın.</p>
+                        <a href="#" class="btn">Devamını Oku</a>
+                    </article>
+                    <article>
+                        <h3>Zero-Day Açıkları Nedir?</h3>
+                        <p>Zero-day açıkları nasıl tespit edilir ve nasıl korunulur?</p>
+                        <a href="#" class="btn">Devamını Oku</a>
+                    </article>
+                </div>
             </div>
         </section>
     </main>
