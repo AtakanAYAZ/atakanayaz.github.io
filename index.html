@@ -14,77 +14,50 @@
             <nav>
                 <ul>
                     <li><a href="#home">Ana Sayfa</a></li>
-                    <li><a href="#cve">CVE Açıkları</a></li>
-                    <li><a href="#articles">Yazılar</a></li>
+                    <li><a href="#cve">Öne Çıkan CVE Açıkları</a></li>
+                    <li><a href="#articles">Son Blog Yazıları</a></li>
                     <li><a href="#contact">İletişim</a></li>
                 </ul>
             </nav>
         </div>
     </header>
 
-    <section class="hero-section">
-        <div class="container">
-            <h2>Güvenliğinizi Artırın</h2>
-            <p>Siber tehditlerle mücadele etmek için en güncel bilgiler ve eğitimler burada!</p>
-            <a href="#cve" class="btn hero-btn">Son CVE Açıkları</a>
-        </div>
-    </section>
-
     <main>
-        <section id="featured" class="featured-section">
+        <section id="cve" class="content-section">
             <div class="container">
-                <h2 class="featured-title">Öne Çıkan Konular</h2>
-                <div class="card-container">
-                    <div class="card">
-                        <h3>Phishing Saldırıları</h3>
-                        <p>Kimlik avı saldırılarından korunmanın yollarını öğrenin.</p>
-                        <a href="#" class="btn">Devamını Oku</a>
+                <h2>Öne Çıkan CVE Açıkları</h2>
+                <div class="cve-list">
+                    <div class="cve-item">
+                        <h3>CVE-2024-12345</h3>
+                        <p>Apache Log4j – Kritik uzaktan kod yürütme açığı.</p>
+                        <a href="#" class="btn">Detaylar ve Çözüm</a>
                     </div>
-                    <div class="card">
-                        <h3>VPN Kullanımı</h3>
-                        <p>VPN neden gerekli ve nasıl kurulur? Bilmeniz gerekenler.</p>
-                        <a href="#" class="btn">Devamını Oku</a>
+                    <div class="cve-item">
+                        <h3>CVE-2024-54321</h3>
+                        <p>Windows SMB protokolünde açık – Ağ erişimi riski.</p>
+                        <a href="#" class="btn">Detaylar ve Çözüm</a>
                     </div>
-                    <div class="card">
-                        <h3>Sosyal Mühendislik Saldırıları</h3>
-                        <p>Sosyal mühendislik saldırılarına karşı nasıl önlem alınır?</p>
-                        <a href="#" class="btn">Devamını Oku</a>
+                    <div class="cve-item">
+                        <h3>CVE-2024-09876</h3>
+                        <p>OpenSSL hatası – Şifreleme zafiyeti giderildi.</p>
+                        <a href="#" class="btn">Detaylar ve Çözüm</a>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="content-section">
-            <div class="container content-grid">
-                <div class="card-container">
-                    <h2>Güncel CVE Açıkları</h2>
-                    <div class="card">
-                        <h3>CVE-2024-12345</h3>
-                        <p>Apache Log4j güvenlik açığı – Uzaktan kod yürütme tehdidi.</p>
-                        <a href="#">Detaylar ve Çözüm</a>
-                    </div>
-                    <div class="card">
-                        <h3>CVE-2024-54321</h3>
-                        <p>Windows SMB servisinde kritik açık – Ağ geçişine izin verir.</p>
-                        <a href="#">Detaylar ve Çözüm</a>
-                    </div>
-                    <div class="card">
-                        <h3>CVE-2024-09876</h3>
-                        <p>OpenSSL şifreleme hatası – Sürüm güncellemesi gerektirir.</p>
-                        <a href="#">Detaylar ve Çözüm</a>
-                    </div>
-                </div>
-
-                <div class="card-container">
-                    <h2>Son Blog Yazıları</h2>
-                    <div class="card">
-                        <h3>Güçlü Parola Oluşturma</h3>
-                        <p>Güçlü bir parola oluşturmanın püf noktalarını öğrenin.</p>
+        <section id="articles" class="content-section">
+            <div class="container">
+                <h2>Son Blog Yazıları</h2>
+                <div class="blog-list">
+                    <div class="blog-item">
+                        <h3>Güçlü Parola Nasıl Oluşturulur?</h3>
+                        <p>Parola güvenliği için ipuçları.</p>
                         <a href="#" class="btn">Devamını Oku</a>
                     </div>
-                    <div class="card">
+                    <div class="blog-item">
                         <h3>Zero-Day Açıkları Nedir?</h3>
-                        <p>Zero-day açıkları nasıl tespit edilir ve nasıl korunulur?</p>
+                        <p>Bu açıklardan korunma yolları.</p>
                         <a href="#" class="btn">Devamını Oku</a>
                     </div>
                 </div>
@@ -92,10 +65,10 @@
         </section>
     </main>
 
-    <footer>
+    <footer class="custom-footer">
         <div class="container">
             <p>&copy; 2024 Atakan Ayaz - Tüm Hakları Saklıdır.</p>
-            <nav class="footer-nav">
+            <nav>
                 <a href="#">Gizlilik Politikası</a> | 
                 <a href="#">Kullanım Koşulları</a>
             </nav>
