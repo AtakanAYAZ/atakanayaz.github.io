@@ -1,3 +1,4 @@
+/* Genel stil */
 body {
     background-color: #1c1c1c;
     color: #fff;
@@ -6,6 +7,7 @@ body {
     padding: 0;
 }
 
+/* Header */
 .main-header {
     background-color: #2a2a2a;
     padding: 20px;
@@ -33,29 +35,11 @@ body {
     font-size: 1.2rem;
 }
 
+/* Ana İçerik */
 .hero-section {
     padding: 50px 0;
     text-align: center;
     background-color: #333;
-}
-
-.hero-section h2 {
-    font-size: 2rem;
-    margin-bottom: 10px;
-}
-
-.hero-section p {
-    font-size: 1.2rem;
-}
-
-.btn {
-    display: inline-block;
-    padding: 10px 20px;
-    margin-top: 15px;
-    background-color: #4d8db0;
-    color: #fff;
-    text-decoration: none;
-    border-radius: 5px;
 }
 
 .featured-section {
@@ -65,12 +49,7 @@ body {
     border-radius: 8px;
 }
 
-.featured-title {
-    text-align: center;
-    font-size: 1.8rem;
-    margin-bottom: 15px;
-}
-
+/* CVE Kartları */
 .card-container {
     display: flex;
     justify-content: space-around;
@@ -82,129 +61,29 @@ body {
     padding: 20px;
     border-radius: 8px;
     width: 30%;
+    text-align: left;
 }
 
-.card h3 {
-    margin-top: 0;
-}
-
-.card p {
-    margin-bottom: 10px;
-}
-
-.two-column-layout {
-    display: flex;
-    justify-content: space-between;
-}
-
-.cve-section, .articles-section {
-    width: 48%; /* Her iki bölüm de sayfanın yarısını kaplasın */
-    background-color: #1b1b1b;
-    padding: 20px;
-    border-radius: 8px;
-}
-
-.cve-title, .articles-title {
-    text-align: left; /* Başlık sola hizalandı */
-    font-size: 1.3rem; /* Başlık boyutu küçültüldü */
-    margin-bottom: 15px;
-}
-
-.cve-container, .blog-container {
-    display: flex;
-    flex-direction: column; /* Alt alta dizilim */
-    gap: 10px;
-}
-
-.cve-card, .blog-card {
-    background-color: #2a2a2a;
-    padding: 15px;
-    border-radius: 8px;
-    flex: 1;
-    font-size: 0.9rem; /* Daha küçük font boyutu */
-}
-
-.cve-card a, .blog-card a {
+.card a {
     color: #79a9c9;
     text-decoration: underline;
 }
 
+/* Footer */
 .footer {
     text-align: center;
     padding: 15px 0;
     background-color: #2a2a2a;
     margin-top: 20px;
 }
-.card {
-    background-color: #2a2a2a;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-    text-align: center; /* Resim ve metin ortalanacak */
-}
 
-.card-image {
-    width: 100%; /* Kartın genişliğine göre ayarlanır */
-    max-width: 200px; /* Maksimum genişliği 200 piksel ile sınırla */
-    height: auto; /* Orantılı yükseklik */
-    border-radius: 8px; /* Kenarları yuvarlatma */
-    margin-bottom: 10px; /* Resim ile metin arasında boşluk */
-}
-
-.card h3 {
-    margin-top: 0;
-}
-body {
-    background-color: #1c1c1c;
-    color: #fff;
-    font-family: 'Poppins', sans-serif;
-    margin: 0;
-    padding: 0;
-}
-
-.main-header {
-    background-color: #2a2a2a;
-    padding: 20px;
-    text-align: center;
-}
-
-.hero-section h2 {
-    font-size: 2rem;
-}
-
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
-}
-
-.card {
-    background-color: #2a2a2a;
-    padding: 20px;
-    border-radius: 8px;
-    width: 30%;
-}
-
-/* Mobil uyumlu stil ayarları */
+/* Mobil Uyumluluk */
 @media (max-width: 768px) {
     .card-container {
         flex-direction: column;
         align-items: center;
     }
-
     .card {
         width: 80%;
-        margin-bottom: 20px;
-    }
-
-    .hero-section h2 {
-        font-size: 1.5rem;
-    }
-
-    img {
-        max-width: 100%;
-        height: auto;
     }
 }
-
-
