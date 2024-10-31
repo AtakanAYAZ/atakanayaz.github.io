@@ -1,4 +1,4 @@
-/* Genel stil */
+/* Eski CSS kodları */
 body {
     background-color: #1c1c1c;
     color: #fff;
@@ -7,83 +7,63 @@ body {
     padding: 0;
 }
 
-/* Header */
-.main-header {
+header {
     background-color: #2a2a2a;
     padding: 20px;
     text-align: center;
 }
 
-.main-header h1 {
+header h1 {
     font-size: 2.5rem;
     margin: 0;
 }
 
-.main-header nav ul {
+nav ul {
     list-style: none;
     padding: 0;
 }
 
-.main-header nav ul li {
+nav ul li {
     display: inline-block;
     margin: 0 15px;
 }
 
-.main-header a {
+nav a {
     text-decoration: none;
     color: #4d8db0;
     font-size: 1.2rem;
 }
 
-/* Ana İçerik */
-.hero-section {
+main {
     padding: 50px 0;
     text-align: center;
     background-color: #333;
 }
 
-.featured-section {
-    margin: 20px 0;
-    padding: 20px;
+h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+section {
     background-color: #1b1b1b;
-    border-radius: 8px;
-}
-
-/* CVE Kartları */
-.card-container {
-    display: flex;
-    justify-content: space-around;
-    gap: 15px;
-}
-
-.card {
-    background-color: #2a2a2a;
     padding: 20px;
     border-radius: 8px;
-    width: 30%;
-    text-align: left;
 }
 
-.card a {
+ul li {
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+
+ul li a {
     color: #79a9c9;
     text-decoration: underline;
 }
 
-/* Footer */
-.footer {
+footer {
     text-align: center;
     padding: 15px 0;
     background-color: #2a2a2a;
     margin-top: 20px;
-}
-
-/* Mobil Uyumluluk */
-@media (max-width: 768px) {
-    .card-container {
-        flex-direction: column;
-        align-items: center;
-    }
-    .card {
-        width: 80%;
-    }
 }
