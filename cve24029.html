@@ -23,21 +23,27 @@
 
 <main>
     <section class="info-section">
-        <h2>Güncel Siber Güvenlik Bilgileri</h2>
-        <p>Bu blog, siber güvenlik alanında güncel bilgiler, CVE açıkları ve blog yazıları ile kullanıcıları bilgilendirmeyi amaçlamaktadır. Siber tehditlerle mücadelede en iyi yöntemleri öğrenmek için doğru yerdesiniz!</p>
+        <h2>Risk Durumu</h2>
+        <p>Bu tür bir açık, saldırganların sisteminize uzaktan erişim sağlamasına yol açabileceği için oldukça tehlikelidir. Özellikle güncellenmemiş veya zayıf güvenlik önlemlerine sahip sistemler, bu tür saldırılara daha açık hale gelir. Eğer bir saldırgan bu açığı kullanmayı başarırsa, sistem üzerinde tam kontrol sağlayabilir, hassas verilere erişebilir ve daha büyük saldırılar gerçekleştirebilir.</p>
     </section>
 
     <section id="cve24029" class="cve-details">
         <h2>CVE-2024-24029 Güvenlik Açığı</h2>
         <p><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
-        <h3>Örnek:</h3>
-        <p>Açık, özellikle güncellenmemiş sistemlerde daha fazla risk taşımaktadır. Saldırganlar, kullanıcıların sisteme giriş yapmasını bekleyerek bu açığı istismar edebilirler.</p>
-        <h3>Çözüm ve Koruma:</h3>
+        <h3>Kullanım Senaryoları</h3>
+        <p>CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:
+
+Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.
+Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.</p>
+        <h3>Çözüm Adımları</h3>
         <ul>
-            <li>Sistem yazılımlarını güncelleyin.</li>
-            <li>Güvenlik duvarı ve saldırı tespit sistemleri kullanın.</li>
-            <li>Ağ trafiğini düzenli olarak izleyin.</li>
-            <li>Güvenlik yamalarını zamanında uygulayın.</li>
+            <li>Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:
+
+Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.
+Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.
+Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.
+Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.
+Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin. </li>
         </ul>
         <h3>Kod Örneği:</h3>
         <pre>
