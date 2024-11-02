@@ -157,3 +157,13 @@ body {
     border-radius: 8px; /* Kenarları yuvarlatma */
     margin-bottom: 10px; /* Resim ile metin arasında boşluk */
 }
+.language-switch {
+    margin: 10px;
+}
+
+.language-switch button {
+    margin-right: 5px;
+    padding: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
