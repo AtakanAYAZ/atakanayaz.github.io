@@ -206,4 +206,10 @@ footer {
     background-color: #333;
     color: white;
 }
+.language-switch button:hover,
+.cve-card a:hover,
+.blog-card a:hover {
+    background-color: #FF5C00; /* Daha koyu turuncu */
+    transition: background-color 0.3s ease; /* Yumuşak geçiş */
+}
 
