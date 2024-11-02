@@ -160,32 +160,11 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
                 riskStatusTitle: "Risk Status",
                 riskStatusContent: "Such a vulnerability can allow attackers to gain remote access to your system, making it very dangerous. Systems with outdated or weak security measures are more susceptible to such attacks. If an attacker manages to exploit this vulnerability, they can gain full control over the system, access sensitive data, and carry out larger attacks.",
                 cveTitle: "CVE-2024-24029 Vulnerability",
-                cveSummary: "<strong>Summary:</strong> CVE-2024-24029 is a critical security vulnerability that allows remote code execution in certain software. Attackers can send malicious code to compromised systems, gaining unauthorized access.",
-               ```html
+                cveSummary: "<strong>Summary:</strong> CVE-2024-24029 is a critical security vulnerability that allows remote code execution in certain software. Attackers can send malicious code to affected systems, gaining unauthorized access.",
                 usageScenariosTitle: "Usage Scenarios",
-                usageScenariosContent: "The CVE-2024-24029 vulnerability is typically exploited in the following ways:",
+                usageScenariosContent: "The CVE-2024-24029 vulnerability is commonly exploited in the following ways:",
                 solutionStepsTitle: "Solution Steps",
-                solutionStepsContent: [
-                    "To mitigate the effects of this vulnerability, it is essential to follow these steps:",
-                    "Software Updates: Regularly check for and apply software and system updates.",
-                    "Firewalls and Intrusion Detection Systems: Use firewalls effectively and implement intrusion detection systems to monitor potential threats.",
-                    "Network Monitoring: Regularly monitor your network traffic and detect unusual activities.",
-                    "Training and Awareness: Train users against social engineering attacks and inform them how to recognize such threats.",
-                    "Security Patches: Apply security patches promptly to prevent the exploitation of known vulnerabilities."
-                ],
                 codeExampleTitle: "Code Example:",
-                codeExample: "# Simple security check in Python\nimport requests\n\ndef check_vulnerability(url):\n    response = requests.get(url)\n    if \"vulnerable\" in response.text:\n        print(\"Vulnerability exists!\")\n    else:\n        print(\"Safe.\")\n\ncheck_vulnerability(\"http://example.com/vulnerable_endpoint\")",
-                cveCards: [
-                    { title: "CVE-2024-24029", description: "Critical remote code execution vulnerability.", detailsLink: "#cve24029" },
-                    { title: "CVE-2024-4567", description: "Critical security vulnerability.", detailsLink: "#" },
-                    { title: "CVE-2024-6789", description: "Unauthorized access issue.", detailsLink: "#" },
-                    { title: "CVE-2024-7890", description: "Vulnerable to DDOS attacks.", detailsLink: "#" }
-                ],
-                articles: [
-                    { title: "5 New Methods Against Cyber Threats", link: "#" },
-                    { title: "Most Popular VPN Services of 2024", link: "#" },
-                    { title: "New Tactics in Phishing Attacks", link: "#" }
-                ]
             },
             tr: {
                 title: "Web siteme hoş geldiniz",
@@ -197,69 +176,21 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
                 usageScenariosTitle: "Kullanım Senaryoları",
                 usageScenariosContent: "CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:",
                 solutionStepsTitle: "Çözüm Adımları",
-                solutionStepsContent: [
-                    "Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:",
-                    "Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.",
-                    "Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.",
-                    "Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.",
-                    "Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.",
-                    "Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin."
-                ],
                 codeExampleTitle: "Kod Örneği:",
-                codeExample: "# Python ile basit bir güvenlik kontrolü\nimport requests\n\ndef check_vulnerability(url):\n    response = requests.get(url)\n    if \"vulnerable\" in response.text:\n        print(\"Açık var!\")\n    else:\n        print(\"Güvenli.\")\n\ncheck_vulnerability(\"http://example.com/vulnerable_endpoint\")",
-                cveCards: [
-                    { title: "CVE-2024-24029", description: "Kritik bir uzaktan kod yürütme açığı.", detailsLink: "#cve24029" },
-                    { title: "CVE-2024-4567", description: "Kritik bir güvenlik açığı.", detailsLink: "#" },
-                    { title: "CVE-2024-6789", description: "Yetkisiz erişim sorunu.", detailsLink: "#" },
-                    { title: "CVE-2024-7890", description: "DDOS saldırısına açık yapı.", detailsLink: "#" }
-                ],
-                articles: [
-                    { title: "Siber Tehditlere Karşı 5 Yeni Yöntem", link: "#" },
-                    { title: "2024'ün En Popüler VPN Hizmetleri", link: "#" },
-                    { title: "Phishing Saldırılarında Yeni Taktikler", link: "#" }
-                ]
             }
         };
 
-        function changeLanguage(lang) {
-            document.getElementById("title").innerHTML = translations[lang].title;
-            document.getElementById("content").innerHTML = translations[lang].content;
-            document.getElementById("risk-status-title").innerHTML = translations[lang].riskStatusTitle;
-            document.getElementById("risk-status-content").innerHTML = translations[lang].riskStatusContent;
-            document.getElementById("cve-title").innerHTML = translations[lang].cveTitle;
-            document.getElementById("cve-summary").innerHTML = translations[lang].cveSummary;
-            document.getElementById("usage-scenarios-title").innerHTML = translations[lang].usageScenariosTitle;
-            document.getElementById("usage-scenarios-content").innerHTML = translations[lang].usageScenariosContent;
-            document.getElementById("solution-steps-title").innerHTML = translations[lang].solutionStepsTitle;
-
-            const solutionSteps = document.querySelector('.cve-details ul');
-            solutionSteps.innerHTML = ''; // Mevcut listeyi temizle
-            translations[lang].solutionStepsContent.forEach(step => {
-                const li = document.createElement('li');
-                li.textContent = step;
-                solutionSteps.appendChild(li);
-            });
-
-            document.getElementById("code-example-title").innerHTML = translations[lang].codeExampleTitle;
-            document.querySelector('.cve-details pre').textContent = translations[lang].codeExample;
-
-            const cveCardsContainer = document.querySelector('.cve-container');
-            cveCardsContainer.innerHTML = ''; // Mevcut kartları temizle
-            translations[lang].cveCards.forEach(card => {
-                const div = document.createElement('div');
-                div.className = 'cve-card';
-                div.innerHTML = `<strong>${card.title}:</strong> ${card.description}. <a href="${card.detailsLink}">Detaylar</a>`;
-                cveCardsContainer.appendChild(div);
-            });
-
-            const articlesContainer = document.querySelector('.blog-container');
-            articlesContainer.innerHTML = ''; // Mevcut makaleleri temizle
-            translations[lang].articles.forEach(article => {
-                const div = document.createElement('div');
-                div.className = 'blog-card';
-                div.innerHTML = `<a href="${article.link}">${article.title}</a>`;
-                articlesContainer.appendChild(div);
-            });
+        function changeLanguage(language) {
+            document.getElementById("title").innerHTML = translations[language].title;
+            document.getElementById("content").innerHTML = translations[language].content;
+            document.getElementById("risk-status-title").innerHTML = translations[language].riskStatusTitle;
+            document.getElementById("risk-status-content").innerHTML = translations[language].riskStatusContent;
+            document.getElementById("cve-title").innerHTML = translations[language].cveTitle;
+            document.getElementById("cve-summary").innerHTML = translations[language].cveSummary;
+            document.getElementById("usage-scenarios-title").innerHTML = translations[language].usageScenariosTitle;
+            document.getElementById("usage-scenarios-content").innerHTML = translations[language].usageScenariosContent;
+            document.getElementById("solution-steps-title").innerHTML = translations[language].solutionStepsTitle;
+            document.getElementById("code-example-title").innerHTML = translations[language].codeExampleTitle;
         }
     </script>
 </body>
