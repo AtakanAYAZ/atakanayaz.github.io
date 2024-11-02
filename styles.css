@@ -157,7 +157,7 @@ body {
     border-radius: 8px; /* Kenarları yuvarlatma */
     margin-bottom: 10px; /* Resim ile metin arasında boşluk */
 }
-nav ul {
+  nav ul {
             list-style-type: none;
             padding: 0;
         }
@@ -174,7 +174,7 @@ nav ul {
             text-decoration: underline;
         }
         .info-section, .cve-details {
-            background: #fff;
+            background: #f8f8f8; /* Koyu beyaz arka plan */
             border-radius: 10px;
             padding: 20px;
             box-shadow: 0 4px 8px rgba(0,0,0,0.1);
