@@ -221,4 +221,21 @@ body {
         box-shadow: 0 4px 8px rgba(0,0,0,0.1);
         margin: 20px 0;
     }
-
+   body {
+        font-family: 'Poppins', sans-serif;
+        background-color: #f4f4f4; /* Sayfanın genel arka plan rengi */
+        margin: 0;
+        padding: 20px;
+    }
+    .info-section, .cve-details {
+        background: #e0e0e0; /* Koyu beyaz yerine açık gri arka plan */
+        border-radius: 10px;
+        padding: 20px;
+        box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        margin: 20px 0;
+        color: black; /* Yazı rengini siyah yapıyoruz */
+    }
+    h2, h3, p {
+        color: black; /* Başlıklar ve paragraflar için siyah yazı rengi */
+    }
+    /* Diğer stiller aynı kalır */
