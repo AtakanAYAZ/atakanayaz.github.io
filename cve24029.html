@@ -106,9 +106,18 @@ Bu tür bir güvenlik açığı, kullanıcıların kişisel verilerini ve diğer
             <h3 id="usage-scenarios-title">Kullanım Senaryoları</h3>
             <p id="usage-scenarios-content">CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:</p>
             <ul id="usage-scenarios-list">
-                <li id="social-engineering">Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.</li>
-                <li id="automated-attacks">Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.</li>
-            </ul>
+                <li id="social-engineering">Veri Dinleme (Eavesdropping): Saldırgan, etkilenen bir GnuTLS uygulaması üzerinden geçen TLS bağlantısını dinleyebilir. Bu, hassas bilgilerin (şifreler, kredi kartı bilgileri gibi) sızdırılmasına yol açabilir.
+
+Veri Manipülasyonu: Saldırgan, iletişim sırasında veri paketlerini değiştirebilir. Örneğin, bir güncelleme veya dosya indirme sırasında kötü amaçlı yazılımlar eklemek için bu açığı kullanabilir.
+
+Kimlik Doğrulama Atlatma: Kullanıcıların veya sistemlerin kimlik doğrulama sürecini atlatmak için bu güvenlik açığından yararlanılabilir. Bu, yetkisiz erişime yol açabilir.
+
+Hizmet Dışı Bırakma Saldırıları (DoS): Saldırgan, bağlantıyı hedef alarak hizmetin kesilmesine veya yavaşlamasına neden olabilir. Bu, sistemlerin normal işleyişini engelleyebilir.
+
+Kötü Amaçlı Yazılım Dağıtımı: Saldırgan, güvenilir bir bağlantı üzerinden kötü amaçlı yazılım göndermek için bu açığı kullanabilir. Kullanıcılar, sahte bir güncelleme veya güvenlik yamanması aracılığıyla bu yazılımları yükleyebilir.
+
+Bu senaryolar, CVE-2024-24029 açığının ciddiyetini ve güncellemelerin neden bu kadar önemli olduğunu gösteriyor. Etkilenen sistemlerin bir an önce güncellenmesi gerekmektedir.</li>
+               
             <h3 id="solution-steps-title">Çözüm Adımları</h3>
             <ul id="solution-steps-list">
                 <li>Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:</li>
