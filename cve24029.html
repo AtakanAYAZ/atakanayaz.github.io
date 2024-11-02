@@ -100,7 +100,9 @@
 
         <section id="cve24029" class="cve-details">
             <h2 id="cve-title">CVE-2024-24029 Güvenlik Açığı</h2>
-            <p id="cve-summary"><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
+            <p id="cve-summary"><strong>Özet:</strong> CVE-2024-24029, özellikle GnuTLS kütüphanesinde bulunan bir güvenlik açığıdır. Bu açık, saldırganların bir istemci ile sunucu arasındaki TLS (Transport Layer Security) bağlantısını etkileyerek, güvenli verilerin ifşasına neden olabilir.
+Açık, belirli bir TLS şifreleme modülünde, istemci ve sunucu arasında beklenmedik bir durum oluştuğunda, yanlış bir yapılandırma nedeniyle ortaya çıkar. Bu durum, saldırganların iletişimi dinlemesine veya manipüle etmesine olanak tanır. Özellikle, güvenlik güncellemeleri yapılmamış sistemlerde daha büyük bir risk taşır.
+Bu tür bir güvenlik açığı, kullanıcıların kişisel verilerini ve diğer hassas bilgileri tehlikeye atabileceğinden, ilgili sistemlerin güncellenmesi ve bu açığın kapatılması oldukça önemlidir. Unutmayın, güncel yazılım kullanmak her zaman güvenliğinizi artırır!</p>
             <h3 id="usage-scenarios-title">Kullanım Senaryoları</h3>
             <p id="usage-scenarios-content">CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:</p>
             <ul id="usage-scenarios-list">
@@ -187,7 +189,7 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
                 document.getElementById('risk-status-title').innerText = 'Risk Status';
                 document.getElementById('risk-status-content').innerText = 'This type of vulnerability can allow attackers to gain remote access to your system, making it very dangerous. Systems that are not updated or have weak security measures are more vulnerable to such attacks. If an attacker manages to exploit this vulnerability, they can gain full control over the system, access sensitive data, and carry out larger attacks.';
                 document.getElementById('cve-title').innerText = 'CVE-2024-24029 Vulnerability';
-                document.getElementById('cve-summary').innerHTML = '<strong>Summary:</strong> CVE-2024-24029 is a critical vulnerability that allows remote code execution in certain software. Attackers can send malicious code to affected systems to gain unauthorized access.';
+                document.getElementById('cve-summary').innerHTML = '<strong>Summary:</strong> CVE-2024-24029 is a security vulnerability found in the GnuTLS library. This vulnerability allows attackers to potentially expose secure data by affecting the TLS (Transport Layer Security) connection between a client and a server. The issue arises from an unexpected situation in a specific TLS encryption module leading to incorrect configurations This can enable attackers to eavesdrop on or manipulate the communication It poses a higher risk, especially on systems that have not received security updates Such vulnerabilities can endanger users personal information and other sensitive data making it crucial to update affected systems and address this flaw Remember keeping your software up to date is always a great way to enhance your security!';
                 document.getElementById('usage-scenarios-title').innerText = 'Usage Scenarios';
                 document.getElementById('usage-scenarios-content').innerText = 'CVE-2024-24029 vulnerability is usually exploited in the following ways:';
                 document.getElementById('usage-scenarios-list').innerHTML = '<li>Social Engineering: Redirecting users to fake websites or exploiting the vulnerability through malicious emails.</li><li>Automated Attacks: Attackers identifying known vulnerabilities using scanners and injecting malicious code into target systems.</li>';
