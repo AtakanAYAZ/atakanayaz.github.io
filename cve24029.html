@@ -162,7 +162,7 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
                 cveTitle: "CVE-2024-24029 Vulnerability",
                 cveSummary: "<strong>Summary:</strong> CVE-2024-24029 is a critical security vulnerability that allows remote code execution in certain software. Attackers can send malicious code to affected systems, gaining unauthorized access.",
                 usageScenariosTitle: "Usage Scenarios",
-                usageScenariosContent: "The CVE-2024-24029 vulnerability is commonly exploited in the following ways:",
+                usageScenariosContent: "The CVE-2024-24029 vulnerability is often exploited in the following ways:",
                 solutionStepsTitle: "Solution Steps",
                 codeExampleTitle: "Code Example:",
             },
@@ -180,17 +180,17 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
             }
         };
 
-        function changeLanguage(language) {
-            document.getElementById("title").innerHTML = translations[language].title;
-            document.getElementById("content").innerHTML = translations[language].content;
-            document.getElementById("risk-status-title").innerHTML = translations[language].riskStatusTitle;
-            document.getElementById("risk-status-content").innerHTML = translations[language].riskStatusContent;
-            document.getElementById("cve-title").innerHTML = translations[language].cveTitle;
-            document.getElementById("cve-summary").innerHTML = translations[language].cveSummary;
-            document.getElementById("usage-scenarios-title").innerHTML = translations[language].usageScenariosTitle;
-            document.getElementById("usage-scenarios-content").innerHTML = translations[language].usageScenariosContent;
-            document.getElementById("solution-steps-title").innerHTML = translations[language].solutionStepsTitle;
-            document.getElementById("code-example-title").innerHTML = translations[language].codeExampleTitle;
+        function changeLanguage(lang) {
+            document.getElementById("title").innerHTML = translations[lang].title;
+            document.getElementById("content").innerHTML = translations[lang].content;
+            document.getElementById("risk-status-title").innerHTML = translations[lang].riskStatusTitle;
+            document.getElementById("risk-status-content").innerHTML = translations[lang].riskStatusContent;
+            document.getElementById("cve-title").innerHTML = translations[lang].cveTitle;
+            document.getElementById("cve-summary").innerHTML = translations[lang].cveSummary;
+            document.getElementById("usage-scenarios-title").innerHTML = translations[lang].usageScenariosTitle;
+            document.getElementById("usage-scenarios-content").innerHTML = translations[lang].usageScenariosContent;
+            document.getElementById("solution-steps-title").innerHTML = translations[lang].solutionStepsTitle;
+            document.getElementById("code-example-title").innerHTML = translations[lang].codeExampleTitle;
         }
     </script>
 </body>
