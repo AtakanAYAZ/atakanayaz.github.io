@@ -1,11 +1,17 @@
+
 function changeLanguage(lang) {
-    console.log(`Changing language to: ${lang}`);
-    // Mevcut içerikleri güncelle
-    if (lang === 'en') {
-        document.getElementById('title').innerText = 'Welcome to my website';
-        document.getElementById('content').innerText = 'This is an example of multilingual support using JavaScript.';
-    } else if (lang === 'tr') {
-        document.getElementById('title').innerText = 'Web siteme hoş geldiniz';
-        document.getElementById('content').innerText = 'JavaScript kullanarak çok dilli destek örneğidir.';
-    }
+    const elementsToChange = [
+        { id: 'main-title', key: 'title' },
+        { id: 'risk-status-title', key: 'riskStatusTitle' },
+        { id: 'risk-status-content', key: 'riskStatusContent' },
+        { id: 'cve-title', key: 'cveTitle' },
+        { id: 'cve-summary', key: 'cveSummary' },
+        { id: 'usage-scenarios-title', key: 'usageScenariosTitle' },
+        { id: 'usage-scenarios-content', key: 'usageScenariosContent' },
+        // Diğer öğeleri de ekleyin...
+    ];
+
+    elementsToChange.forEach(({ id, key }) => {
+        document.getElementById(id).textContent = translations[lang][key];
+    });
 }
