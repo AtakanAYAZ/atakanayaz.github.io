@@ -3,35 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blog Yazıları</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Atakan Ayaz | Siber Güvenlik Blogu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Blog Yazıları</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="cve.html">CVE Açıkları</a></li>
-                <li><a href="sosyal.html">Sosyal Mühendislik</a></li>
-                <li><a href="phishing.html">Phishing</a></li>
-                <li><a href="vpn.html">VPN Kullanımı</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Son Blog Yazıları</h2>
-            <ul>
-                <li><strong>Phishing Saldırılarına Dikkat!</strong> - Phishing saldırılarının artışı ve korunma yolları hakkında bilgi.</li>
-                <li><strong>VPN Kullanımının Avantajları</strong> - Neden bir VPN kullanmalısınız?</li>
-                <li><strong>Sosyal Mühendislik ve Korunma Yöntemleri</strong> - Sosyal mühendislik saldırılarına karşı almanız gereken önlemler.</li>
-            </ul>
+
+<header class="main-header">
+    <h1>Atakan Ayaz | Siber Güvenlik Blogu</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="cve.html">CVE Açıkları</a></li>
+            <li><a href="blog.html">Yazılar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section class="info-section">
+        <h2>Yakında Yayında...</h2>
+
+    <div class="two-column-layout">
+        <section class="cve-section">
+            <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
+            <div class="cve-container">
+                <div class="cve-card">
+                    <strong>CVE-2024-24029:</strong> Kritik bir uzaktan kod yürütme açığı. 
+                    <a href="cve24029.html">Detaylar</a>
+                </div>
+                <div class="cve-card">
+                    <strong>CVE-2024-4567:</strong> Kritik bir güvenlik açığı.
+                    <a href="#">Detaylar</a>
+                </div>
+                <div class="cve-card">
+                    <strong>CVE-2024-6789:</strong> Yetkisiz erişim sorunu.
+                    <a href="#">Detaylar</a>
+                </div>
+                <div class="cve-card">
+                    <strong>CVE-2024-7890:</strong> DDOS saldırısına açık yapı.
+                    <a href="#">Detaylar</a>
+                </div>
+            </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024. Tüm hakları saklıdır.</p>
-    </footer>
+
+        <section class="articles-section">
+            <h2 class="articles-title">Son Blog Yazıları</h2>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <a href="#">Siber Tehditlere Karşı 5 Yeni Yöntem</a>
+                </div>
+                <div class="blog-card">
+                    <a href="#">2024'ün En Popüler VPN Hizmetleri</a>
+                </div>
+                <div class="blog-card">
+                    <a href="#">Phishing Saldırılarında Yeni Taktikler</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Atakan Ayaz | Tüm Hakları Saklıdır</p>
+</footer>
+
 </body>
 </html>
