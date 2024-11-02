@@ -3,54 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Phishing</title>
-    
+    <title>Atakan Ayaz | Siber Güvenlik Blogu</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Phishing Saldırıları</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Anasayfa</a></li>
-                <li><a href="cve.html">CVE Açıkları</a></li>
-                <li><a href="blog.html">Blog Yazıları</a></li>
-                <li><a href="sosyal.html">Sosyal Mühendislik</a></li>
-                <li><a href="vpn.html">VPN Kullanımı</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <h2>Phishing Saldırılarında Yeni Taktikler</h2>
-            <p>Phishing, yani kimlik avı, siber suçluların hedefledikleri kişileri kandırarak gizli bilgilerini (şifreler, kredi kartı numaraları vb.) ele geçirmeye çalıştığı bir saldırı türüdür. 2024 itibarıyla bu tür saldırılar, daha sofistike tekniklerle gerçekleştirilmektedir. Aşağıda, en yeni phishing taktikleri ve bunlara karşı alabileceğiniz önlemler anlatılmaktadır.
 
-Yeni Taktikler:
+<header class="main-header">
+    <h1>Atakan Ayaz | Siber Güvenlik Blogu</h1>
+    <nav>
+        <ul>
+            <li><a href="index.html">Ana Sayfa</a></li>
+            <li><a href="cve.html">CVE Açıkları</a></li>
+            <li><a href="blog.html">Yazılar</a></li>
+            <li><a href="iletisim.html">İletişim</a></li>
+        </ul>
+    </nav>
+</header>
 
-Sosyal Mühendislik Teknikleri:
-Saldırganlar, hedef kişilerin güvenini kazanmak için sahte kimlikler ve hikayeler kullanıyor. Örneğin, bir bankanın müşteri temsilcisi olarak arayarak kullanıcı bilgilerini talep edebilirler.
+<main>
+    <section class="info-section">
+        <h2>Yakında Yayında...</h2>
 
-Zararlı Bağlantılar:
-Phishing e-postalarında sıklıkla zararlı bağlantılar kullanılır. Kullanıcı, sahte bir web sitesine yönlendirilir ve buradan bilgilerini paylaşması istenir. Özellikle sosyal medya üzerinden gelen bağlantılara dikkat edilmelidir.
-
-Oltalama:
-Kullanıcıların hesap bilgilerini girmeleri için tasarlanmış sahte web siteleri ile oltalama saldırıları giderek yaygınlaşmaktadır. Bu tür web siteleri genellikle gerçek sitelere çok benzer.
-
-Korunma Yöntemleri:
-
-Eğitim ve Farkındalık:
-Kullanıcıların kimlik avı saldırılarına karşı bilinçlenmesi çok önemlidir. Şirketler, çalışanlarına bu tür saldırılarla ilgili eğitimler vermelidir.
-
-Güvenlik Yazılımları:
-Antivirüs ve güvenlik yazılımları kullanarak zararlı içerikleri tespit edebilirsiniz. Yazılımlar, e-posta ve tarayıcı güvenliğini artırmaya yardımcı olur.
-
-İki Faktörlü Kimlik Doğrulama:
-Kullanıcı hesaplarınızı korumak için iki faktörlü kimlik doğrulama (2FA) kullanmalısınız. Bu, hesaplarınıza erişimi artırır ve ekstra bir güvenlik katmanı sağlar.</p>
+    <div class="two-column-layout">
+        <section class="cve-section">
+            <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
+            <div class="cve-container">
+                <div class="cve-card">
+                    <strong>CVE-2024-24029:</strong> Kritik bir uzaktan kod yürütme açığı. 
+                    <a href="cve24029.html">Detaylar</a>
+                </div>
+                <div class="cve-card">
+                    <strong>CVE-2024-4567:</strong> Kritik bir güvenlik açığı.
+                    <a href="#">Detaylar</a>
+                </div>
+                <div class="cve-card">
+                    <strong>CVE-2024-6789:</strong> Yetkisiz erişim sorunu.
+                    <a href="#">Detaylar</a>
+                </div>
+                <div class="cve-card">
+                    <strong>CVE-2024-7890:</strong> DDOS saldırısına açık yapı.
+                    <a href="#">Detaylar</a>
+                </div>
+            </div>
         </section>
-    </main>
-    <footer>
-        <p>&copy; 2024. Tüm hakları saklıdır.</p>
-    </footer>
+
+        <section class="articles-section">
+            <h2 class="articles-title">Son Blog Yazıları</h2>
+            <div class="blog-container">
+                <div class="blog-card">
+                    <a href="#">Siber Tehditlere Karşı 5 Yeni Yöntem</a>
+                </div>
+                <div class="blog-card">
+                    <a href="#">2024'ün En Popüler VPN Hizmetleri</a>
+                </div>
+                <div class="blog-card">
+                    <a href="#">Phishing Saldırılarında Yeni Taktikler</a>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</main>
+
+<footer class="footer">
+    <p>&copy; 2024 Atakan Ayaz | Tüm Hakları Saklıdır</p>
+</footer>
+
 </body>
 </html>
