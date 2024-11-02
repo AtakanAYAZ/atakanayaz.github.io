@@ -36,48 +36,61 @@
     </div>
 
     <!-- Çevrilecek içerik -->
-    <h1 id="title">Welcome to my website</h1>
-    <p id="content">This is an example of multilingual support using JavaScript.</p>
+    <h1 id="title">CVE-2024-24029 Güvenlik Açığı</h1>
+    <p id="content">CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
 
-    <script src="script.js"></script>
-<header class="main-header">
-    <h1>Atakan Ayaz | Siber Güvenlik Blogu</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cve.html">CVE Açıkları</a></li>
-            <li><a href="blog.html">Yazılar</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
-    </nav>
-</header>
+    <script>
+        function changeLanguage(lang) {
+            if (lang === 'en') {
+                document.getElementById('title').innerHTML = "CVE-2024-24029 Vulnerability";
+                document.getElementById('content').innerHTML = "CVE-2024-24029 is a critical security vulnerability that allows remote code execution in certain software. Attackers can send malicious code to compromised systems to gain unauthorized access.";
+                // Diğer içerikleri de burada güncelle
+            } else if (lang === 'tr') {
+                document.getElementById('title').innerHTML = "CVE-2024-24029 Güvenlik Açığı";
+                document.getElementById('content').innerHTML = "CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.";
+                // Diğer içerikleri de burada güncelle
+            }
+        }
+    </script>
 
-<main>
-    <section class="info-section">
-        <h2>Risk Durumu</h2>
-        <p>Bu tür bir açık, saldırganların sisteminize uzaktan erişim sağlamasına yol açabileceği için oldukça tehlikelidir. Özellikle güncellenmemiş veya zayıf güvenlik önlemlerine sahip sistemler, bu tür saldırılara daha açık hale gelir. Eğer bir saldırgan bu açığı kullanmayı başarırsa, sistem üzerinde tam kontrol sağlayabilir, hassas verilere erişebilir ve daha büyük saldırılar gerçekleştirebilir.</p>
-    </section>
+    <header class="main-header">
+        <h1>Atakan Ayaz | Siber Güvenlik Blogu</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Ana Sayfa</a></li>
+                <li><a href="cve.html">CVE Açıkları</a></li>
+                <li><a href="blog.html">Yazılar</a></li>
+                <li><a href="iletisim.html">İletişim</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <section id="cve24029" class="cve-details">
-        <h2>CVE-2024-24029 Güvenlik Açığı</h2>
-        <p><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
-        <h3>Kullanım Senaryoları</h3>
-        <p>CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:</p>
-        <ul>
-            <li>Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.</li>
-            <li>Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.</li>
-        </ul>
-        <h3>Çözüm Adımları</h3>
-        <ul>
-            <li>Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:</li>
-            <li>Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.</li>
-            <li>Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.</li>
-            <li>Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.</li>
-            <li>Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.</li>
-            <li>Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin.</li>
-        </ul>
-        <h3>Kod Örneği:</h3>
-        <pre>
+    <main>
+        <section class="info-section">
+            <h2>Risk Durumu</h2>
+            <p>Bu tür bir açık, saldırganların sisteminize uzaktan erişim sağlamasına yol açabileceği için oldukça tehlikelidir. Özellikle güncellenmemiş veya zayıf güvenlik önlemlerine sahip sistemler, bu tür saldırılara daha açık hale gelir. Eğer bir saldırgan bu açığı kullanmayı başarırsa, sistem üzerinde tam kontrol sağlayabilir, hassas verilere erişebilir ve daha büyük saldırılar gerçekleştirebilir.</p>
+        </section>
+
+        <section id="cve24029" class="cve-details">
+            <h2>CVE-2024-24029 Güvenlik Açığı</h2>
+            <p><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
+            <h3>Kullanım Senaryoları</h3>
+            <p>CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:</p>
+            <ul>
+                <li>Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.</li>
+                <li>Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.</li>
+            </ul>
+            <h3>Çözüm Adımları</h3>
+            <ul>
+                <li>Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:</li>
+                <li>Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.</li>
+                <li>Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.</li>
+                <li>Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.</li>
+                <li>Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.</li>
+                <li>Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin.</li>
+            </ul>
+            <h3>Kod Örneği:</h3>
+            <pre>
 # Python ile basit bir güvenlik kontrolü
 import requests
 
@@ -89,54 +102,51 @@ def check_vulnerability(url):
         print("Güvenli.")
         
 check_vulnerability("http://example.com/vulnerable_endpoint")
-        </pre>
-    </section>
-
-    <div class="two-column-layout">
-        <section class="cve-section">
-            <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
-            <div class="cve-container">
-                <div class="cve-card">
-                    <strong>CVE-2024-24029:</strong> Kritik bir uzaktan kod yürütme açığı. 
-                    <a href="#cve24029">Detaylar</a>
-                </div>
-                <div class="cve-card">
-                    <strong>CVE-2024-4567:</strong> Kritik bir güvenlik açığı.
-                    <a href="#">Detaylar</a>
-                </div>
-                <div class="cve-card">
-                    <strong>CVE-2024-6789:</strong> Yetkisiz erişim sorunu.
-                    <a href="#">Detaylar</a>
-                </div>
-                <div class="cve-card">
-                    <strong>CVE-2024-7890:</strong> DDOS saldırısına açık yapı.
-                    <a href="#">Detaylar</a>
-                </div>
-            </div>
+            </pre>
         </section>
 
-        <section class="articles-section">
-            <h2 class="articles-title">Son Blog Yazıları</h2>
-            <div class="blog-container">
-                <div class="blog-card">
-                    <a href="#">Siber Tehditlere Karşı 5 Yeni Yöntem</a>
+        <div class="two-column-layout">
+            <section class="cve-section">
+                <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
+                <div class="cve-container">
+                    <div class="cve-card">
+                        <strong>CVE-2024-24029:</strong> Kritik bir uzaktan kod yürütme açığı. 
+                        <a href="#cve24029">Detaylar</a>
+                    </div>
+                    <div class="cve-card">
+                        <strong>CVE-2024-4567:</strong> Kritik bir güvenlik açığı.
+                        <a href="#">Detaylar</a>
+                    </div>
+                    <div class="cve-card">
+                        <strong>CVE-2024-6789:</strong> Yetkisiz erişim sorunu.
+                        <a href="#">Detaylar</a>
+                    </div>
+                    <div class="cve-card">
+                        <strong>CVE-2024-7890:</strong> DDOS saldırısına açık yapı.
+                        <a href="#">Detaylar</a>
+                    </div>
                 </div>
-                <div class="blog-card">
-                    <a href="#">2024'ün En Popüler VPN Hizmetleri</a>
+            </section>
+
+            <section class="articles-section">
+                <h2 class="articles-title">Son Blog Yazıları</h2>
+                <div class="blog-container">
+                    <div class="blog-card">
+                        <a href="#">Siber Tehditlere Karşı 5 Yeni Yöntem</a>
+                    </div>
+                    <div class="blog-card">
+                        <a href="#">2024'ün En Popüler VPN Hizmetleri</a>
+                    </div>
+                    <div class="blog-card">
+                        <a href="#">Phishing Saldırılarında Yeni Taktikler</a>
+                    </div>
                 </div>
-                <div class="blog-card">
-                    <a href="#">Phishing Saldırılarında Yeni Taktikler</a>
-                </div>
-            </div>
-        </section>
-    </div>
+            </section>
+        </div>
+    </main>
 
-</main>
-
-<footer class="footer">
-    <p>&copy; 2024 Atakan Ayaz | Tüm Hakları Saklıdır</p>
-</footer>
-
+    <footer class="footer">
+        <p>&copy; 2024 Atakan Ayaz | Tüm Hakları Saklıdır</p>
+    </footer>
 </body>
 </html>
-
