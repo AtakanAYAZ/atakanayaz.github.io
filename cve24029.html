@@ -56,13 +56,13 @@
     <p id="content">JavaScript kullanarak çok dilli destek örneği.</p>
 
     <header class="main-header">
-        <h1>Atakan Ayaz | Siber Güvenlik Blogu</h1>
+        <h1 id="main-title">Atakan Ayaz | Siber Güvenlik Blogu</h1>
         <nav>
             <ul>
-                <li><a href="index.html">Ana Sayfa</a></li>
-                <li><a href="cve.html">CVE Açıkları</a></li>
-                <li><a href="blog.html">Yazılar</a></li>
-                <li><a href="iletisim.html">İletişim</a></li>
+                <li><a href="index.html" id="home-link">Ana Sayfa</a></li>
+                <li><a href="cve.html" id="cve-link">CVE Açıkları</a></li>
+                <li><a href="blog.html" id="blog-link">Yazılar</a></li>
+                <li><a href="iletisim.html" id="contact-link">İletişim</a></li>
             </ul>
         </nav>
     </header>
@@ -78,18 +78,18 @@
             <p id="cve-summary"><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
             <h3 id="usage-scenarios-title">Kullanım Senaryoları</h3>
             <p id="usage-scenarios-content">CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:</p>
-            <ul>
-                <li>Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.</li>
-                <li>Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.</li>
+            <ul id="usage-scenarios-list">
+                <li id="social-engineering">Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.</li>
+                <li id="automated-attacks">Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.</li>
             </ul>
             <h3 id="solution-steps-title">Çözüm Adımları</h3>
-            <ul>
+            <ul id="solution-steps-list">
                 <li>Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:</li>
-                <li>Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.</li>
-                <li>Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.</li>
-                <li>Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.</li>
-                <li>Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.</li>
-                <li>Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin.</li>
+                <li id="software-updates">Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.</li>
+                <li id="firewall-ids">Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.</li>
+                <li id="network-monitoring">Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.</li>
+                <li id="training-awareness">Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.</li>
+                <li id="security-patches">Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin.</li>
             </ul>
             <h3 id="code-example-title">Kod Örneği:</h3>
             <pre>
@@ -158,13 +158,34 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
                 title: "Welcome to my website",
                 content: "This is an example of multilingual support using JavaScript.",
                 riskStatusTitle: "Risk Status",
-                riskStatusContent: "Such a vulnerability can allow attackers to gain remote access to your system, making it very dangerous. Systems with outdated or weak security measures are more susceptible to such attacks. If an attacker manages to exploit this vulnerability, they can gain full control over the system, access sensitive data, and carry out larger attacks.",
+                riskStatusContent: "Such a vulnerability can allow attackers to gain remote access to your system, making it very dangerous. Systems with outdated or weak security measures are more susceptible to such attacks. If an attacker manages to exploit this vulnerability, they can gain full control over the system, access sensitive data, and launch larger attacks.",
                 cveTitle: "CVE-2024-24029 Vulnerability",
-                cveSummary: "<strong>Summary:</strong> CVE-2024-24029 is a critical security vulnerability that allows remote code execution in certain software. Attackers can send malicious code to affected systems, gaining unauthorized access.",
+                cveSummary: "<strong>Summary:</strong> CVE-2024-24029 is a critical vulnerability that allows remote code execution in certain software. Attackers can send malicious code to affected systems to gain unauthorized access.",
                 usageScenariosTitle: "Usage Scenarios",
-                usageScenariosContent: "The CVE-2024-24029 vulnerability is often exploited in the following ways:",
+                usageScenariosContent: "The CVE-2024-24029 vulnerability is commonly exploited in the following ways:",
+                socialEngineering: "Social Engineering: Redirecting users to fake websites or exploiting the vulnerability through malicious emails.",
+                automatedAttacks: "Automated Attacks: Attackers can identify known vulnerabilities using browsers and inject malicious code into target systems.",
                 solutionStepsTitle: "Solution Steps",
+                solutionStepsList: [
+                    "To mitigate the effects of this vulnerability, it is essential to follow these steps:",
+                    "Software Updates: Regularly check for and install software and system updates.",
+                    "Firewalls and Intrusion Detection Systems: Use firewalls effectively and install intrusion detection systems to monitor potential threats.",
+                    "Network Monitoring: Regularly monitor your network traffic and detect unusual activities.",
+                    "Training and Awareness: Train users against social engineering attacks and inform them about how to recognize such threats.",
+                    "Security Patches: Apply security patches promptly to prevent exploitation of known vulnerabilities."
+                ],
                 codeExampleTitle: "Code Example:",
+                codeExample: `# Simple security check in Python
+import requests
+
+def check_vulnerability(url):
+    response = requests.get(url)
+    if "vulnerable" in response.text:
+        print("Vulnerability exists!")
+    else:
+        print("Secure.")
+
+check_vulnerability("http://example.com/vulnerable_endpoint")`
             },
             tr: {
                 title: "Web siteme hoş geldiniz",
@@ -175,22 +196,56 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
                 cveSummary: "<strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.",
                 usageScenariosTitle: "Kullanım Senaryoları",
                 usageScenariosContent: "CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:",
+                socialEngineering: "Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.",
+                automatedAttacks: "Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.",
                 solutionStepsTitle: "Çözüm Adımları",
+                solutionStepsList: [
+                    "Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:",
+                    "Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.",
+                    "Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.",
+                    "Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.",
+                    "Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.",
+                    "Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin."
+                ],
                 codeExampleTitle: "Kod Örneği:",
+                codeExample: `# Python ile basit bir güvenlik kontrolü
+import requests
+
+def check_vulnerability(url):
+    response = requests.get(url)
+    if "vulnerable" in response.text:
+        print("Açık var!")
+    else:
+        print("Güvenli.")
+
+check_vulnerability("http://example.com/vulnerable_endpoint")`
             }
         };
 
-        function changeLanguage(lang) {
-            document.getElementById("title").innerHTML = translations[lang].title;
-            document.getElementById("content").innerHTML = translations[lang].content;
-            document.getElementById("risk-status-title").innerHTML = translations[lang].riskStatusTitle;
-            document.getElementById("risk-status-content").innerHTML = translations[lang].riskStatusContent;
-            document.getElementById("cve-title").innerHTML = translations[lang].cveTitle;
-            document.getElementById("cve-summary").innerHTML = translations[lang].cveSummary;
-            document.getElementById("usage-scenarios-title").innerHTML = translations[lang].usageScenariosTitle;
-            document.getElementById("usage-scenarios-content").innerHTML = translations[lang].usageScenariosContent;
-            document.getElementById("solution-steps-title").innerHTML = translations[lang].solutionStepsTitle;
-            document.getElementById("code-example-title").innerHTML = translations[lang].codeExampleTitle;
+        function changeLanguage(language) {
+            document.getElementById('title').innerText = translations[language].title;
+            document.getElementById('content').innerText = translations[language].content;
+            document.getElementById('risk-status-title').innerText = translations[language].riskStatusTitle;
+            document.getElementById('risk-status-content').innerHTML = translations[language].riskStatusContent;
+            document.getElementById('cve-title').innerText = translations[language].cveTitle;
+            document.getElementById('cve-summary').innerHTML = translations[language].cveSummary;
+            document.getElementById('usage-scenarios-title').innerText = translations[language].usageScenariosTitle;
+            document.getElementById('usage-scenarios-content').innerText = translations[language].usageScenariosContent;
+            document.getElementById('social-engineering').innerText = translations[language].socialEngineering;
+            document.getElementById('automated-attacks').innerText = translations[language].automatedAttacks;
+            document.getElementById('solution-steps-title').innerText = translations[language].solutionStepsTitle;
+
+            // Çözüm adımlarını güncelle
+            const solutionStepsList = document.getElementById('solution-steps-list');
+            solutionStepsList.innerHTML = ""; // Önceki listeyi temizle
+            translations[language].solutionStepsList.forEach(step => {
+                const li = document.createElement('li');
+                li.innerText = step;
+                solutionStepsList.appendChild(li);
+            });
+
+            document.getElementById('code-example-title').innerText = translations[language].codeExampleTitle;
+            document.querySelector('pre').innerText = translations[language].codeExample;
         }
     </script>
 </body>
