@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2024 Güvenlik Açıkları - CVE-2024-24029</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>2024 Güvenlik Açıkları</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Anasayfa</a></li>
+                <li><a href="cve.html">CVE Açıkları</a></li>
+                <li><a href="blog.html">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="cve-details">
+            <h2>CVE-2024-24029</h2>
+            <p><strong>Açıklama:</strong> CVE-2024-24029, VMware ESXi sunucularını hedef alan kritik bir güvenlik açığıdır. Bu açık, saldırganların uzaktan komut çalıştırmalarına olanak tanır ve sistemleri fidye yazılımı gibi tehditlere karşı savunmasız hale getirir.</p>
+            <h3>Örnek Saldırı Senaryosu</h3>
+            <p>Saldırgan, açıklığı bulunan bir ESXi sunucusuna uzaktan bağlanarak zararlı yazılımlarını yükleyebilir ve verileri şifreleyebilir. Bu işlem çoğunlukla 443 numaralı port üzerinden gerçekleşmektedir.</p>
+            <h3>Koruma ve Çözüm Yöntemleri</h3>
+            <ul>
+                <li>En son <strong>VMware güncellemelerini</strong> uygulayın.</li>
+                <li>Yalnızca belirli IP adreslerinden erişimi kısıtlayarak <strong>güvenlik duvarı yapılandırmasını</strong> güçlendirin.</li>
+                <li><strong>İzleme araçları</strong> kullanarak anormal faaliyetleri tespit edin.</li>
+            </ul>
+            <h3>Örnek Kod</h3>
+            <p>Aşağıda, yalnızca belirli bir IP adresinden ESXi sunucusuna erişime izin vermek için bir <code>iptables</code> örneği bulunmaktadır:</p>
+            <pre><code>
+# ESXi sunucusuna yalnızca belirli bir IP adresinden erişime izin verin
+iptables -A INPUT -p tcp -s 192.168.1.10 --dport 443 -j ACCEPT
+iptables -A INPUT -p tcp --dport 443 -j DROP
+            </code></pre>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Siber Güvenlik Güncellemeleri</p>
+    </footer>
+</body>
+</html>
