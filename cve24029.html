@@ -3,99 +3,262 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Atakan Ayaz | Siber Güvenlik Blogu</title>
+    <title id="page-title">Atakan Ayaz | Siber Güvenlik Blogu</title>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
+    <style>
+        /* Başlıklar için stil */
+        .info-section h2,
+        .cve-details h2,
+        .cve-details h3 {
+            text-align: center; /* Ortala */
+            color: #FF7F00; /* Koyu turuncu */
+        }
+
+        /* Alt metinler için stil */
+        .info-section p,
+        .cve-details p,
+        .cve-details ul,
+        .cve-details pre {
+            background-color: #333; /* Koyu gri arka plan */
+            color: white; /* Yazı rengi beyaz */
+            padding: 15px; /* İç boşluk */
+            border-radius: 5px; /* Yuvarlatılmış köşeler */
+            margin: 10px 0; /* Üst ve alt boşluk */
+        }
+
+        /* Dil seçimi düğmeleri için stil */
+        .language-switch {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .language-switch button {
+            margin: 0 5px;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color: #FF7F00;
+            color: white;
+            cursor: pointer;
+        }
+
+        /* İki sütun düzeni için stil */
+        .two-column-layout {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .cve-section, .articles-section {
+            flex: 1;
+            min-width: 300px; /* Mobil uyumluluk için minimum genişlik */
+            margin: 10px;
+        }
+
+        .cve-container, .blog-container {
+            padding: 10px;
+        }
+
+        .cve-card, .blog-card {
+            background-color: #444; /* Kart arka plan rengi */
+            padding: 10px;
+            margin: 5px 0;
+            border-radius: 5px;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #222; /* Footer arka plan rengi */
+            color: white;
+        }
+    </style>
 </head>
 <body>
-
-<header class="main-header">
-    <h1>Atakan Ayaz | Siber Güvenlik Blogu</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cve.html">CVE Açıkları</a></li>
-            <li><a href="blog.html">Yazılar</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
-        </ul>
-    </nav>
-</header>
-
-<section class="hero-section">
-    <h2>Güvenliğinizi Artırın</h2>
-    <p>Siber tehditlerle mücadele etmek için en güncel bilgiler ve eğitimler burada!</p>
-    <a href="cve.html" class="btn hero-btn">Son CVE Açıkları</a>
-</section>
-
-<main>
-    <section id="featured" class="featured-section">
-        <h2 class="featured-title">Öne Çıkan Konular</h2>
-        <div class="card-container">
-            <div class="card">
-                <img src="sosyal.png" alt="Sosyal Mühendislik" class="card-image">
-                <h3>Sosyal Mühendislik Saldırıları</h3>
-                <p>Sosyal mühendislik saldırılarına karşı nasıl önlem alınır?</p>
-                <a href="sosyal.html" class="btn">Devamını Oku</a>
-            </div>
-            <div class="card">
-                <img src="vpn.png" alt="VPN Kullanımı" class="card-image">
-                <h3>VPN Kullanımı</h3>
-                <p>VPN neden gerekli ve nasıl kurulur? Bilmeniz gerekenler.</p>
-                <a href="vpn.html" class="btn">Devamını Oku</a>
-            </div>
-            <div class="card">
-                <img src="phishing.png" alt="Phishing Saldırıları" class="card-image">
-                <h3>Phishing Saldırılarında Yeni Taktikler</h3>
-                <p>Kimlik avı saldırılarından korunmanın yollarını öğrenin.</p>
-                <a href="phishing.html" class="btn">Devamını Oku</a>
-            </div>
-        </div>
-    </section>
-
-    <div class="two-column-layout">
-        <section id="cve" class="cve-section">
-            <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
-            <div class="cve-container">
-                <div class="cve-card">
-                    <strong>CVE-2024-24029:</strong> Kritik bir uzaktan kod yürütme açığı. 
-                    <a href="cve24029.html">Detaylar</a>
-                </div>
-                <div class="cve-card">
-                    <strong>CVE-2024-4567:</strong> Kritik bir güvenlik açığı.
-                    <a href="#">Detaylar</a>
-                </div>
-                <div class="cve-card">
-                    <strong>CVE-2024-6789:</strong> Yetkisiz erişim sorunu.
-                    <a href="#">Detaylar</a>
-                </div>
-                <div class="cve-card">
-                    <strong>CVE-2024-7890:</strong> DDOS saldırısına açık yapı.
-                    <a href="#">Detaylar</a>
-                </div>
-            </div>
-        </section>
-
-        <section id="articles" class="articles-section">
-            <h2 class="articles-title">Son Blog Yazıları</h2>
-            <div class="blog-container">
-                <div class="blog-card">
-                    <a href="threat-methods.html">Siber Tehditlere Karşı 5 Yeni Yöntem</a>
-                </div>
-                <div class="blog-card">
-                    <a href="vpn.html">2024'ün En Popüler VPN Hizmetleri</a>
-                </div>
-                <div class="blog-card">
-                    <a href="phishing.html">Phishing Saldırılarında Yeni Taktikler</a>
-                </div>
-            </div>
-        </section>
+    <!-- Dil seçimi düğmeleri -->
+  
+    <header class="main-header">
+        <h1 id="main-title">Atakan Ayaz | Siber Güvenlik Blogu</h1>
+      
+        <nav>
+            <ul>
+                <li><a href="index.html" id="home-link">Ana Sayfa</a></li>
+                <li><a href="cve.html" id="cve-link">CVE Açıkları</a></li>
+                <li><a href="blog.html" id="blog-link">Yazılar</a></li>
+                <li><a href="iletisim.html" id="contact-link">İletişim</a></li>
+            </ul>
+        </nav>
+            <div class="language-switch">
+        <button onclick="changeLanguage('en')">English</button>
+        <button onclick="changeLanguage('tr')">Türkçe</button>
     </div>
+    </header>
 
-</main>
+    <main>
+        <section class="info-section">
+            <h2 id="risk-status-title">Risk Durumu</h2>
+            <p id="risk-status-content">Bu tür bir açık, saldırganların sisteminize uzaktan erişim sağlamasına yol açabileceği için oldukça tehlikelidir. Özellikle güncellenmemiş veya zayıf güvenlik önlemlerine sahip sistemler, bu tür saldırılara daha açık hale gelir. Eğer bir saldırgan bu açığı kullanmayı başarırsa, sistem üzerinde tam kontrol sağlayabilir, hassas verilere erişebilir ve daha büyük saldırılar gerçekleştirebilir.</p>
+        </section>
 
-<footer class="footer">
-    <p>&copy; 2024 Atakan Ayaz | Tüm Hakları Saklıdır</p>
-</footer>
+        <section id="cve24029" class="cve-details">
+            <h2 id="cve-title">CVE-2024-24029 Güvenlik Açığı</h2>
+            <p id="cve-summary"><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
+            <h3 id="usage-scenarios-title">Kullanım Senaryoları</h3>
+            <p id="usage-scenarios-content">CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:</p>
+            <ul id="usage-scenarios-list">
+                <li id="social-engineering">Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.</li>
+                <li id="automated-attacks">Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.</li>
+            </ul>
+            <h3 id="solution-steps-title">Çözüm Adımları</h3>
+            <ul id="solution-steps-list">
+                <li>Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:</li>
+                <li id="software-updates">Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.</li>
+                <li id="firewall-ids">Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.</li>
+                <li id="network-monitoring">Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.</li>
+                <li id="training-awareness">Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.</li>
+                <li id="security-patches">Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin.</li>
+            </ul>
+            <h3 id="code-example-title">Kod Örneği:</h3>
+            <pre>
+# Python ile basit bir güvenlik kontrolü
+import requests
 
+def check_vulnerability(url):
+    response = requests.get(url)
+    if "vulnerable" in response.text:
+        print("Açık var!")
+    else:
+        print("Güvenli.")
+        
+check_vulnerability("http://example.com/vulnerable_endpoint")
+            </pre>
+        </section>
+
+        <div class="two-column-layout">
+            <section class="cve-section">
+                <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
+                <div class="cve-container">
+                    <div class="cve-card">
+                        <strong>CVE-2024-24029:</strong> Kritik bir uzaktan kod yürütme açığı. 
+                        <a href="#cve24029">Detaylar</a>
+                    </div>
+                    <div class="cve-card">
+                        <strong>CVE-2024-4567:</strong> Kritik bir güvenlik açığı.
+                        <a href="#">Detaylar</a>
+                    </div>
+                    <div class="cve-card">
+                        <strong>CVE-2024-6789:</strong> Yetkisiz erişim sorunu.
+                        <a href="#">Detaylar</a>
+                    </div>
+                    <div class="cve-card">
+                        <strong>CVE-2024-7890:</strong> DDOS saldırısına açık yapı.
+                        <a href="#">Detaylar</a>
+                    </div>
+                </div>
+            </section>
+
+            <section class="articles-section">
+                <h2 class="articles-title">Son Blog Yazıları</h2>
+                <div class="blog-container">
+                    <div class="blog-card">
+                        <a href="#">Siber Tehditlere Karşı 5 Yeni Yöntem</a>
+                    </div>
+                    <div class="blog-card">
+                        <a href="#">2024'ün En Önemli Siber Güvenlik Eğilimleri</a>
+                    </div>
+                    <div class="blog-card">
+                        <a href="#">Veri Güvenliği İçin En İyi Uygulamalar</a>
+                    </div>
+                    <div class="blog-card">
+                        <a href="#">Siber Savaş ve Geleceği</a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2024 Atakan Ayaz | Tüm hakları saklıdır.</p>
+    </footer>
+
+    <script>
+        // Çok dilli destek fonksiyonu
+        const translations = {
+            en: {
+                title: "Welcome to my website",
+                content: "This is a multilingual support example using JavaScript.",
+                riskStatusTitle: "Risk Status",
+                riskStatusContent: "This type of vulnerability can be quite dangerous as it allows attackers to gain remote access to your system, especially if the system is unpatched or has weak security measures.",
+                cveTitle: "CVE-2024-24029 Vulnerability",
+                cveSummary: "CVE-2024-24029 is a critical vulnerability that allows for remote code execution in certain software.",
+                usageScenariosTitle: "Usage Scenarios",
+                usageScenariosContent: "The CVE-2024-24029 vulnerability is commonly exploited in the following ways:",
+                socialEngineering: "Social Engineering: Redirecting users to fake websites or exploiting the vulnerability through malicious emails.",
+                automatedAttacks: "Automated Attacks: Attackers identifying known vulnerabilities using scanners and injecting malicious code into target systems.",
+                solutionStepsTitle: "Solution Steps",
+                solutionStepsList: [
+                    "To mitigate the effects of this vulnerability, it is important to follow these steps:",
+                    "Software Updates: Regularly check and install software and system updates.",
+                    "Firewall and Intrusion Detection Systems: Effectively use firewalls and implement intrusion detection systems to monitor potential threats.",
+                    "Network Monitoring: Regularly monitor your network traffic and detect unusual activities.",
+                    "Training and Awareness: Educate users about social engineering attacks and how to recognize such threats.",
+                    "Security Patches: Apply security patches in a timely manner to prevent exploitation of known vulnerabilities."
+                ],
+                codeExampleTitle: "Code Example:",
+            },
+            tr: {
+                title: "Web siteme hoş geldiniz",
+                content: "JavaScript kullanarak çok dilli destek örneği.",
+                riskStatusTitle: "Risk Durumu",
+                riskStatusContent: "Bu tür bir açık, saldırganların sisteminize uzaktan erişim sağlamasına yol açabileceği için oldukça tehlikelidir. Özellikle güncellenmemiş veya zayıf güvenlik önlemlerine sahip sistemler, bu tür saldırılara daha açık hale gelir.",
+                cveTitle: "CVE-2024-24029 Güvenlik Açığı",
+                cveSummary: "CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır.",
+                usageScenariosTitle: "Kullanım Senaryoları",
+                usageScenariosContent: "CVE-2024-24029 açığı, genellikle aşağıdaki yollarla kullanılmaktadır:",
+                socialEngineering: "Sosyal Mühendislik: Kullanıcıların sahte web sitelerine yönlendirilmesi veya kötü niyetli e-postalar aracılığıyla açığın istismar edilmesi.",
+                automatedAttacks: "Otomatik Saldırılar: Saldırganların, internet üzerindeki bilinen açıkları tarayıcılar kullanarak belirleyip, hedef sistemlere kötü niyetli kod enjekte etmesi.",
+                solutionStepsTitle: "Çözüm Adımları",
+                solutionStepsList: [
+                    "Bu açığın etkilerini azaltmak için aşağıdaki adımları takip etmek önemlidir:",
+                    "Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.",
+                    "Güvenlik Duvarı ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkin bir şekilde kullanın ve saldırı tespit sistemleri kurarak potansiyel tehditleri izleyin.",
+                    "Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı aktiviteleri tespit edin.",
+                    "Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırılarına karşı eğitin ve bu tür tehditlerin nasıl tanınacağı hakkında bilgi verin.",
+                    "Güvenlik Yamaları: Güvenlik yamalarını zamanında uygulayarak bilinen açıkların istismarını önleyin."
+                ],
+                codeExampleTitle: "Kod Örneği:",
+            }
+        };
+
+        function changeLanguage(language) {
+            document.getElementById("title").innerText = translations[language].title;
+            document.getElementById("content").innerText = translations[language].content;
+
+            document.getElementById("risk-status-title").innerText = translations[language].riskStatusTitle;
+            document.getElementById("risk-status-content").innerText = translations[language].riskStatusContent;
+
+            document.getElementById("cve-title").innerText = translations[language].cveTitle;
+            document.getElementById("cve-summary").innerText = translations[language].cveSummary;
+
+            document.getElementById("usage-scenarios-title").innerText = translations[language].usageScenariosTitle;
+            document.getElementById("usage-scenarios-content").innerText = translations[language].usageScenariosContent;
+
+            document.getElementById("social-engineering").innerText = translations[language].socialEngineering;
+            document.getElementById("automated-attacks").innerText = translations[language].automatedAttacks;
+
+            document.getElementById("solution-steps-title").innerText = translations[language].solutionStepsTitle;
+
+            const solutionStepsList = document.getElementById("solution-steps-list");
+            solutionStepsList.innerHTML = ""; // Mevcut listeyi temizle
+            translations[language].solutionStepsList.forEach(step => {
+                const li = document.createElement("li");
+                li.innerText = step;
+                solutionStepsList.appendChild(li);
+            });
+
+            document.getElementById("code-example-title").innerText = translations[language].codeExampleTitle;
+        }
+    </script>
 </body>
 </html>
