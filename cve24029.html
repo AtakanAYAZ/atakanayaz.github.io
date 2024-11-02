@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en"> <!-- Setting the language to English -->
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,27 +7,32 @@
     <link rel="stylesheet" href="styles.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <style>
-        /* Style for headings */
-        .info-section h2,
-        .cve-details h2,
-        .cve-details h3 {
-            text-align: center; /* Center align */
-            color: #FF7F00; /* Dark orange */
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #111; /* Koyu arka plan rengi */
+            color: white;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #222; /* Koyu header rengi */
+            padding: 10px;
         }
 
-        /* Style for subtitles */
-        .info-section p,
-        .cve-details p,
-        .cve-details ul,
-        .cve-details pre {
-            background-color: #333; /* Dark gray background */
-            color: white; /* Text color white */
-            padding: 15px; /* Padding */
-            border-radius: 5px; /* Rounded corners */
-            margin: 10px 0; /* Top and bottom margin */
+        h1, h2, h3 {
+            color: #FF7F00; /* Turuncu renk */
+            text-align: center; /* Merkeze hizalama */
         }
 
-        /* Style for language selection buttons */
+        p, ul, pre {
+            background-color: #333; /* Koyu gri arka plan */
+            padding: 15px;
+            border-radius: 5px;
+            margin: 10px auto; /* Otomatik yan boşluk */
+            max-width: 800px; /* Maksimum genişlik */
+        }
+
         .language-switch {
             text-align: center;
             margin-bottom: 20px;
@@ -43,35 +48,30 @@
             cursor: pointer;
         }
 
-        /* Style for two-column layout */
         .two-column-layout {
             display: flex;
-            justify-content: space-between;
             flex-wrap: wrap;
+            justify-content: space-between;
+            padding: 10px;
         }
 
         .cve-section, .articles-section {
             flex: 1;
-            min-width: 300px; /* Minimum width for mobile compatibility */
+            min-width: 300px; /* Mobil uyumluluk için minimum genişlik */
             margin: 10px;
         }
 
-        .cve-container, .blog-container {
-            padding: 10px;
-        }
-
         .cve-card, .blog-card {
-            background-color: #444; /* Card background color */
+            background-color: #444; /* Kart arka plan rengi */
             padding: 10px;
             margin: 5px 0;
             border-radius: 5px;
         }
 
-        .footer {
+        footer {
             text-align: center;
             padding: 20px;
-            background-color: #222; /* Footer background color */
-            color: white;
+            background-color: #222; /* Koyu footer rengi */
         }
     </style>
 </head>
@@ -157,106 +157,56 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
                     </div>
                 </div>
             </section>
-
             <section class="articles-section">
-                <h2 class="articles-title">Recent Blog Posts</h2>
-                <div class="blog-container">
-                    <div class="blog-card">
-                        <a href="#">5 New Methods Against Cyber Threats</a>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">Key Cyber Security Trends of 2024</a>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">Best Practices for Data Security</a>
-                    </div>
-                    <div class="blog-card">
-                        <a href="#">Cyber Warfare and Its Future</a>
-                    </div>
+                <h2>Latest Articles</h2>
+                <div class="blog-card">
+                    <strong>Understanding Cybersecurity</strong>
+                    <p>Latest trends in cybersecurity...</p>
+                </div>
+                <div class="blog-card">
+                    <strong>Best Practices for Secure Coding</strong>
+                    <p>How to write secure code...</p>
+                </div>
+                <div class="blog-card">
+                    <strong>Incident Response Strategies</strong>
+                    <p>How to respond to security incidents...</p>
                 </div>
             </section>
         </div>
     </main>
-
-    <footer class="footer">
-        <p>&copy; 2024 Atakan Ayaz. All rights reserved.</p>
+    
+    <footer>
+        <p>&copy; 2024 Atakan Ayaz | Cyber Security Blog</p>
     </footer>
 
     <script>
         function changeLanguage(lang) {
             if (lang === 'en') {
-                document.getElementById('page-title').innerText = 'Atakan Ayaz | Cyber Security Blog';
-                document.getElementById('risk-status-title').innerText = 'Risk Status';
-                document.getElementById('risk-status-content').innerText = 'This type of vulnerability can allow attackers to gain remote access to your system, making it very dangerous. Systems that are not updated or have weak security measures are more vulnerable to such attacks. If an attacker manages to exploit this vulnerability, they can gain full control over the system, access sensitive data, and carry out larger attacks.';
-                document.getElementById('cve-title').innerText = 'CVE-2024-24029 Vulnerability';
-                document.getElementById('cve-summary').innerText = 'CVE-2024-24029 is a security vulnerability found in the GnuTLS library. This vulnerability allows attackers to potentially expose secure data by affecting the TLS (Transport Layer Security) connection between a client and a server. The issue arises from an unexpected situation in a specific TLS encryption module leading to incorrect configurations. This can enable attackers to eavesdrop on or manipulate the communication. It poses a higher risk, especially on systems that have not received security updates. Such vulnerabilities can endanger users\' personal information and other sensitive data, making it crucial to update affected systems and address this flaw. Remember, keeping your software up to date is always a great way to enhance your security!';
-                document.getElementById('usage-scenarios-title').innerText = 'Usage Scenarios';
-                document.getElementById('usage-scenarios-content').innerText = 'CVE-2024-24029 vulnerability is usually exploited in the following ways:';
-                document.getElementById('social-engineering').innerText = 'Eavesdropping: An attacker can listen in on TLS connections passing through an affected GnuTLS application. This can lead to the leakage of sensitive information (such as passwords, credit card details).';
-                document.getElementById('data-manipulation').innerText = 'Data Manipulation: The attacker can modify data packets during communication. For example, they could use this vulnerability to inject malware during updates or file downloads.';
-                document.getElementById('authentication-bypass').innerText = 'Authentication Bypass: This vulnerability can be exploited to bypass the authentication process of users or systems, potentially leading to unauthorized access.';
-                document.getElementById('dos-attacks').innerText = 'Denial of Service Attacks: The attacker can target the connection to disrupt or slow down the service, interfering with the normal operation of the systems.';
-                document.getElementById('malware-distribution').innerText = 'Malware Distribution: Attackers can use this vulnerability to send malware over trusted connections. Users may unknowingly install this software through a fake update or security patch.';
-                document.getElementById('solution-steps-title').innerText = 'Solution Steps';
-                document.getElementById('solution-steps-list').innerHTML = '<li>To mitigate the effects of this vulnerability, it is important to follow these steps:</li><li id="software-updates">Software Updates: Regularly check and install software and system updates.</li><li id="firewall-ids">Firewalls and Intrusion Detection Systems: Use firewalls effectively and implement intrusion detection systems to monitor potential threats.</li><li id="network-monitoring">Network Monitoring: Regularly monitor your network traffic and detect unusual activities.</li><li id="training-awareness">Training and Awareness: Educate users about social engineering attacks and how to recognize such threats.</li><li id="security-patches">Security Patches: Apply security patches promptly to prevent exploitation of known vulnerabilities.</li>';
-                document.getElementById('code-example-title').innerText = 'Code Example:';
-                document.querySelector('pre').innerText = '# Simple security check with Python\nimport requests\n\ndef check_vulnerability(url):\n    response = requests.get(url)\n    if "vulnerable" in response.text:\n        print("Vulnerability found!")\n    else:\n        print("Safe.")\n        \ncheck_vulnerability("http://example.com/vulnerable_endpoint")';
-                document.querySelectorAll('.cve-title')[0].innerText = 'Featured CVE Vulnerabilities';
-                document.querySelectorAll('.cve-card')[0].innerHTML = '<strong>CVE-2024-24029:</strong> Critical remote code execution vulnerability. <a href="#cve24029">Details</a>';
-                document.querySelectorAll('.cve-card')[1].innerHTML = '<strong>CVE-2024-4567:</strong> Critical security vulnerability. <a href="#">Details</a>';
-                document.querySelectorAll('.cve-card')[2].innerHTML = '<strong>CVE-2024-6789:</strong> Unauthorized access issue. <a href="#">Details</a>';
-                document.querySelectorAll('.cve-card')[3].innerHTML = '<strong>CVE-2024-7890:</strong> Vulnerable to DDoS attacks. <a href="#">Details</a>';
-                document.querySelector('.articles-title').innerText = 'Recent Blog Posts';
-                document.querySelectorAll('.blog-card')[0].innerHTML = '<a href="#">5 New Methods Against Cyber Threats</a>';
-                document.querySelectorAll('.blog-card')[1].innerHTML = '<a href="#">Key Cyber Security Trends of 2024</a>';
-                document.querySelectorAll('.blog-card')[2].innerHTML = '<a href="#">Best Practices for Data Security</a>';
-                document.querySelectorAll('.blog-card')[3].innerHTML = '<a href="#">Cyber Warfare and Its Future</a>';
-                document.querySelector('.footer p').innerText = '© 2024 Atakan Ayaz. All rights reserved.';
+                document.getElementById('page-title').innerText = "Atakan Ayaz | Cyber Security Blog";
+                document.getElementById('main-title').innerText = "Atakan Ayaz | Cyber Security Blog";
+                document.getElementById('risk-status-title').innerText = "Risk Status";
+                document.getElementById('risk-status-content').innerText = "This type of vulnerability can allow attackers to gain remote access to your system, making it very dangerous...";
+                document.getElementById('cve-title').innerText = "CVE-2024-24029 Vulnerability";
+                document.getElementById('cve-summary').innerHTML = "<strong>Summary:</strong> CVE-2024-24029 is a security vulnerability found in the GnuTLS library...";
+                document.getElementById('usage-scenarios-title').innerText = "Usage Scenarios";
+                document.getElementById('usage-scenarios-content').innerText = "CVE-2024-24029 vulnerability is usually exploited in the following ways:";
+                document.getElementById('solution-steps-title').innerText = "Solution Steps";
+                document.getElementById('code-example-title').innerText = "Code Example:";
+                // Update text for usage scenarios and solution steps here...
             } else if (lang === 'tr') {
-                document.getElementById('page-title').innerText = 'Atakan Ayaz | Siber Güvenlik Blogu';
-                document.getElementById('risk-status-title').innerText = 'Risk Durumu';
-                document.getElementById('risk-status-content').innerText = 'Bu tür bir güvenlik açığı, saldırganların sisteminize uzaktan erişim kazanmasına olanak tanıyabilir ve bu da oldukça tehlikelidir. Güncellenmemiş veya zayıf güvenlik önlemlerine sahip sistemler, bu tür saldırılara daha yatkındır. Bir saldırgan bu açığı istismar ederse, sisteme tam erişim kazanabilir, hassas verilere ulaşabilir ve daha büyük saldırılar gerçekleştirebilir.';
-                document.getElementById('cve-title').innerText = 'CVE-2024-24029 Güvenlik Açığı';
-                document.getElementById('cve-summary').innerText = 'CVE-2024-24029, GnuTLS kütüphanesinde bulunan bir güvenlik açığıdır. Bu açık, saldırganların, istemci ile sunucu arasındaki TLS (Transport Layer Security) bağlantısını etkileyerek güvenli verileri ifşa etmelerine olanak tanır. Belirli bir TLS şifreleme modülündeki beklenmedik bir durumdan kaynaklanan bu sorun, yanlış yapılandırmalara yol açar. Bu, saldırganların iletişimi dinlemesine veya manipüle etmesine olanak tanır. Özellikle güvenlik güncellemeleri almayan sistemlerde daha yüksek bir risk taşımaktadır. Bu tür açıklar, kullanıcıların kişisel bilgilerini ve diğer hassas verilerini tehlikeye atabilir, bu nedenle etkilenen sistemlerin güncellenmesi ve bu açığın ele alınması çok önemlidir. Unutmayın, yazılımlarınızı güncel tutmak her zaman güvenliğinizi artırmanın harika bir yoludur!';
-                document.getElementById('usage-scenarios-title').innerText = 'Kullanım Senaryoları';
-                document.getElementById('usage-scenarios-content').innerText = 'CVE-2024-24029 güvenlik açığı genellikle şu şekillerde istismar edilir:';
-                document.getElementById('social-engineering').innerText = 'Dinleme: Saldırgan, etkilenen bir GnuTLS uygulaması üzerinden geçen TLS bağlantılarını dinleyebilir. Bu, hassas bilgilerin (şifreler, kredi kartı bilgileri gibi) ifşasına neden olabilir.';
-                document.getElementById('data-manipulation').innerText = 'Veri Manipülasyonu: Saldırgan, iletişim sırasında veri paketlerini değiştirebilir. Örneğin, güncellemeler veya dosya indirmeleri sırasında kötü amaçlı yazılımları eklemek için bu açığı kullanabilirler.';
-                document.getElementById('authentication-bypass').innerText = 'Kimlik Doğrulama Atlatma: Bu güvenlik açığı, kullanıcıların veya sistemlerin kimlik doğrulama sürecini atlatmak için istismar edilebilir, bu da yetkisiz erişime yol açabilir.';
-                document.getElementById('dos-attacks').innerText = 'Hizmet Kesintisi Saldırıları: Saldırgan, bağlantıyı hedef alarak hizmeti bozabilir veya yavaşlatabilir, sistemlerin normal işleyişini engelleyebilir.';
-                document.getElementById('malware-distribution').innerText = 'Kötü Amaçlı Yazılım Dağıtımı: Saldırganlar, bu açığı kullanarak güvenilir bağlantılar üzerinden kötü amaçlı yazılım gönderebilirler. Kullanıcılar, sahte bir güncelleme veya güvenlik yamanması yoluyla bu yazılımları bilinçsizce yükleyebilir.';
-                document.getElementById('solution-steps-title').innerText = 'Çözüm Adımları';
-                document.getElementById('solution-steps-list').innerHTML = '<li>Bu güvenlik açığının etkilerini azaltmak için aşağıdaki adımları izlemek önemlidir:</li><li id="software-updates">Yazılım Güncellemeleri: Yazılım ve sistem güncellemelerini düzenli olarak kontrol edin ve yükleyin.</li><li id="firewall-ids">Güvenlik Duvarları ve Saldırı Tespit Sistemleri: Güvenlik duvarlarını etkili bir şekilde kullanın ve olası tehditleri izlemek için saldırı tespit sistemleri uygulayın.</li><li id="network-monitoring">Ağ İzleme: Ağ trafiğinizi düzenli olarak izleyin ve olağandışı etkinlikleri tespit edin.</li><li id="training-awareness">Eğitim ve Farkındalık: Kullanıcıları sosyal mühendislik saldırıları hakkında eğitin ve bu tür tehditleri nasıl tanıyacaklarını öğretin.</li><li id="security-patches">Güvenlik Yamanmaları: Bilinen güvenlik açıklarının istismar edilmesini önlemek için güvenlik yamalarını zamanında uygulayın.</li>';
-                document.getElementById('code-example-title').innerText = 'Kod Örneği:';
-                document.querySelector('pre').innerText = '# Basit güvenlik kontrolü Python ile\nimport requests\n\ndef check_vulnerability(url):\n    response = requests.get(url)\n    if "vulnerable" in response.text:\n        print("Güvenlik açığı bulundu!")\n    else:\n        print("Güvende.")\n        \ncheck_vulnerability("http://example.com/vulnerable_endpoint")';
-                document.querySelectorAll('.cve-title')[0].innerText = 'Öne Çıkan CVE Güvenlik Açıkları';
-                document.querySelectorAll('.cve-card')[0].innerHTML = '<strong>CVE-2024-24029:</strong> Kritik uzaktan kod yürütme güvenlik açığı. <a href="#cve24029">Detaylar</a>';
-                document.querySelectorAll('.cve-card')[1].innerHTML = '<strong>CVE-2024-4567:</strong> Kritik güvenlik açığı. <a href="#">Detaylar</a>';
-                document.querySelectorAll('.cve-card')[2].innerHTML = '<strong>CVE-2024-6789:</strong> Yetkisiz erişim sorunu. <a href="#">Detaylar</a>';
-                document.querySelectorAll('.cve-card')[3].innerHTML = '<strong>CVE-2024-7890:</strong> DDoS saldırılarına karşı hassas. <a href="#">Detaylar</a>';
-                document.querySelector('.articles-title').innerText = 'Son Blog Yazıları';
-                document.querySelectorAll('.blog-card')[0].innerHTML = '<a href="#">Siber Tehditlere Karşı 5 Yeni Yöntem</a>';
-                document.querySelectorAll('.blog-card')[1].innerHTML = '<a href="#">2024 Yılı İçin Ana Siber Güvenlik Trendleri</a>';
-                document.querySelectorAll('.blog-card')[2].innerHTML = '<a href="#">Veri Güvenliği İçin En İyi Uygulamalar</a>';
-                document.querySelectorAll('.blog-card')[3].innerHTML = '<a href="#">Siber Savaş ve Geleceği</a>';
-                document.querySelector('.footer p').innerText = '© 2024 Atakan Ayaz. Tüm hakları saklıdır.';
+                document.getElementById('page-title').innerText = "Atakan Ayaz | Siber Güvenlik Blogu";
+                document.getElementById('main-title').innerText = "Atakan Ayaz | Siber Güvenlik Blogu";
+                document.getElementById('risk-status-title').innerText = "Risk Durumu";
+                document.getElementById('risk-status-content').innerText = "Bu tür bir zafiyet, saldırganların sisteminize uzaktan erişim kazanmasına izin verebilir, bu da son derece tehlikelidir...";
+                document.getElementById('cve-title').innerText = "CVE-2024-24029 Zafiyeti";
+                document.getElementById('cve-summary').innerHTML = "<strong>Özet:</strong> CVE-2024-24029, GnuTLS kütüphanesinde bulunan bir güvenlik zafiyetidir...";
+                document.getElementById('usage-scenarios-title').innerText = "Kullanım Senaryoları";
+                document.getElementById('usage-scenarios-content').innerText = "CVE-2024-24029 zafiyeti genellikle şu şekillerde istismar edilir:";
+                document.getElementById('solution-steps-title').innerText = "Çözüm Adımları";
+                document.getElementById('code-example-title').innerText = "Kod Örneği:";
+                // Update text for usage scenarios and solution steps here...
             }
         }
-
-        function changeLanguage(lang) {
-            const langButtons = document.querySelectorAll('.lang-btn');
-            langButtons.forEach(btn => {
-                if (btn.id === `${lang}-btn`) {
-                    btn.classList.add('active');
-                } else {
-                    btn.classList.remove('active');
-                }
-            });
-            setLanguage(lang);
-        }
-
-        // Initialize with English
-        setLanguage('en');
     </script>
 </body>
 </html>
