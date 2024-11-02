@@ -57,6 +57,10 @@
             <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
             <div class="cve-container">
                 <div class="cve-card">
+                    <strong>CVE-2024-24029:</strong> Kritik bir uzaktan kod yürütme açığı. 
+                    <a href="#cve24029">Detaylar</a>
+                </div>
+                <div class="cve-card">
                     <strong>CVE-2024-4567:</strong> Kritik bir güvenlik açığı.
                     <a href="#">Detaylar</a>
                 </div>
@@ -86,6 +90,35 @@
             </div>
         </section>
     </div>
+
+    <section id="cve24029" class="cve-details">
+        <h2>CVE-2024-24029 Güvenlik Açığı</h2>
+        <p><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
+        <h3>Örnek:</h3>
+        <p>Açık, özellikle güncellenmemiş sistemlerde daha fazla risk taşımaktadır. Saldırganlar, kullanıcıların sisteme giriş yapmasını bekleyerek bu açığı istismar edebilirler.</p>
+        <h3>Çözüm ve Koruma:</h3>
+        <ul>
+            <li>Sistem yazılımlarını güncelleyin.</li>
+            <li>Güvenlik duvarı ve saldırı tespit sistemleri kullanın.</li>
+            <li>Ağ trafiğini düzenli olarak izleyin.</li>
+            <li>Güvenlik yamalarını zamanında uygulayın.</li>
+        </ul>
+        <h3>Kod Örneği:</h3>
+        <pre>
+# Python ile basit bir güvenlik kontrolü
+import requests
+
+def check_vulnerability(url):
+    response = requests.get(url)
+    if "vulnerable" in response.text:
+        print("Açık var!")
+    else:
+        print("Güvenli.")
+        
+check_vulnerability("http://example.com/vulnerable_endpoint")
+        </pre>
+    </section>
+
 </main>
 
 <footer class="footer">
