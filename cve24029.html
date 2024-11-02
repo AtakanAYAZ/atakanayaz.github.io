@@ -13,10 +13,10 @@
     <h1>Atakan Ayaz | Siber Güvenlik Blogu</h1>
     <nav>
         <ul>
-            <li><a href="index.html">Ana Sayfa</a></li>
-            <li><a href="cve.html">CVE Açıkları</a></li>
-            <li><a href="blog.html">Yazılar</a></li>
-            <li><a href="iletisim.html">İletişim</a></li>
+            <li><a href="#home">Ana Sayfa</a></li>
+            <li><a href="#cve">CVE Açıkları</a></li>
+            <li><a href="#articles">Yazılar</a></li>
+            <li><a href="#contact">İletişim</a></li>
         </ul>
     </nav>
 </header>
@@ -24,8 +24,10 @@
 <main>
     <section class="info-section">
         <h2>Güncel Siber Güvenlik Bilgileri</h2>
-        <div class="two-column-layout">
-              <section id="cve24029" class="cve-details">
+        <p>Bu blog, siber güvenlik alanında güncel bilgiler, CVE açıkları ve blog yazıları ile kullanıcıları bilgilendirmeyi amaçlamaktadır. Siber tehditlerle mücadelede en iyi yöntemleri öğrenmek için doğru yerdesiniz!</p>
+    </section>
+
+    <section id="cve24029" class="cve-details">
         <h2>CVE-2024-24029 Güvenlik Açığı</h2>
         <p><strong>Özet:</strong> CVE-2024-24029, belirli yazılımlarda uzaktan kod yürütmeye olanak tanıyan kritik bir güvenlik açığıdır. Saldırganlar, etkilenmiş sistemlere kötü niyetli kod göndererek yetkisiz erişim sağlayabilir.</p>
         <h3>Örnek:</h3>
@@ -52,7 +54,9 @@ def check_vulnerability(url):
 check_vulnerability("http://example.com/vulnerable_endpoint")
         </pre>
     </section>
-        <section id="cve" class="cve-section">
+
+    <div class="two-column-layout">
+        <section class="cve-section">
             <h2 class="cve-title">Öne Çıkan CVE Açıkları</h2>
             <div class="cve-container">
                 <div class="cve-card">
@@ -74,7 +78,7 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
             </div>
         </section>
 
-        <section id="articles" class="articles-section">
+        <section class="articles-section">
             <h2 class="articles-title">Son Blog Yazıları</h2>
             <div class="blog-container">
                 <div class="blog-card">
@@ -98,4 +102,3 @@ check_vulnerability("http://example.com/vulnerable_endpoint")
 
 </body>
 </html>
-
