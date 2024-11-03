@@ -75,7 +75,8 @@ function changeLanguage(lang) {
     }
 }
 
-// Sayfa yüklendiğinde varsayılan dil olarak Türkçe ayarlayın
 window.onload = function () {
+    console.log("Sayfa yüklendi.");
     changeLanguage('tr');
 };
+
