@@ -114,3 +114,6 @@ window.onload = function () {
     const preferredLanguage = localStorage.getItem('preferredLanguage') || 'tr';
     changeLanguage(preferredLanguage); // Kullanıcının tercihine göre dili yükle
 };
+document.addEventListener("DOMContentLoaded", function() {
+    // JavaScript kodunuz burada
+});
